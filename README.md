@@ -22,10 +22,14 @@ Toutes les commandes sont dans la ligne de commande
 Commandes principales de github
 -------------------------------
 
-- Enregistrer les modifications: **git add .**
+- Enregistrer les modifications:     
+		git add .
 
-- Preparer les modifications pour envoi sur le serveur: **git commit -m "Description des modifications / ajouts / suppressions de fichiers"**
+- Preparer les modifications pour envoi sur le serveur:     
+		git commit -m "Description des modifications / ajouts / suppressions de fichiers"
 
-- Envoyer modifications sur github: **git push origin master**
+- Envoyer modifications sur github:      
+		git push origin master
 
-- Chercher derniers modifications sur le serveur de github: **git pull origin master**
+- Chercher derniers modifications sur le serveur de github:          
+		git pull origin master
