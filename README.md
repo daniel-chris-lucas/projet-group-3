@@ -9,8 +9,9 @@ Commandes pour utiliser github
 
 Toutes les commandes sont dans la ligne de commande
 
-- Creer depot + initialiser: Aller dans dossier de projet puis taper  return
-    `git init`
+- Creer depot + initialiser: Aller dans dossier de projet puis taper  
+  return
+  `git init`
 
 - Se connecter au depot de github: **git remote origin https://github.com/xonorageous/projet-group-3**
 
