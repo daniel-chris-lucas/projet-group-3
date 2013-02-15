@@ -1,0 +1,41 @@
+#main table {
+	color: #666;
+	width: 96%;
+	margin: auto;
+
+	tr {
+		td {
+			padding-right: 10px;
+			font-size: 13px;
+			vertical-align: middle;
+			background: #fff;
+		}
+
+		th {
+			background: #dfecea;
+			font-size: 13px;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+
+	tbody tr:hover td, tbody tr:hover th {
+		background: #c5dcec;
+	}	
+}
+
+.table1 {
+	position: relative;
+	left: 50%;
+	margin-left: -520px !important;
+	float: left;
+	clear: none;
+}
+
+.table2 {
+	position: relative;
+	right: 50%;
+	margin-right: -520px !important;
+	float: right;
+	clear: none;
+}

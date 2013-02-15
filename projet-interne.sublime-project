@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "/L/Local Server/sites/projet-interne",
+			"file_exclude_patterns": ["apple-*.png", "*.ico", "oil", "crossdomain.xml", "*.sublime-project", "*.sublime-workspace", "LICENCE"],
+			"folder_exclude_patterns": ["core", "cache", "lang", "modules", "tasks", "tests", "tmp", "view", "Documents"]
+		},
+		{
+			"path": "/L/Local Server/sites/projet-interne/fuel/core"
+		}
+	]
+}
