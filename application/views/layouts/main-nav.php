@@ -1,5 +1,5 @@
 <?php
-	$menu = [];
+	$menu = array();
 	$active = ( $this->uri->segment(1) == null ) ? "accueil" : $this->uri->segment(2);
 
 	$menu["commercial"]["accueil"] = array( "Accueil", 23, 20, base_url() );
