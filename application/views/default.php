@@ -24,4 +24,42 @@
 
     <?= $this->load->view( "layouts/main-banner" ) ?>
 
-    
+    <!-- Start wrapper -->
+    <div id="wrapper">
+        <?= $this->load->view( 'layouts/filters' ) ?>
+
+        <!-- Start main section -->
+        <div id="main-section">
+            <?= $this->load->view( 'layouts/main-nav' ) ?>
+
+            <!-- Start main -->
+            <div id="main" role="main" <?= $this->session->userdata( 'profile' ) 
+                    ? 'class="' . $this->session->userdata( 'profile' ) . '"' 
+                    : '' ?>>
+                <?= $body ?>
+            </div>
+            <!-- End main -->
+
+            <footer>
+                <p>
+                    <img src="<?= base_url() ?>assets/img/logo-krystal-conseil.png" alt="Krystal Conseil" width="36" height="28">
+                    Réalisation par Krystal Conseil
+                </p>
+            </footer>
+        </div>
+        <!-- End main section -->
+    </div>
+    <!-- End wrapper -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || 
+        document.write('<script src="<?= base_url() ?>assets/js/vendor/jquery-1.8.3.min.js"><\/script>')
+    </script>
+
+    <script src="<?= base_url() ?>assets/js/vendor/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>assets/js/jquery.dropkick-1.0.0.js"></script>
+    <script src="<?= base_url() ?>assets/js/plugins.js"></script>
+    <script src="<?= base_url() ?>assets/js/main.js"></script>
+</body>
+</html>

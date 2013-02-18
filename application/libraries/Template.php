@@ -25,7 +25,7 @@ class Template
 				$body_view_path = $body_view . '.php';
 			else
 			{
-				show_error( 'Unable to load the requested file: ' . $tpl_name . '/' . $view_name . '.php' );
+				show_error( 'Unable to load the requested file: ' . $tpl_view . '/' . $body_view . '.php' );
 			}
 
 			$body = $this->ci->load->view( $body_view_path, $data, TRUE );

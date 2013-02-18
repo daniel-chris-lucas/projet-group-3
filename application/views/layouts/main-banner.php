@@ -10,7 +10,7 @@
             </td>
             <td>
                 <?php if( $this->session->userdata( 'username' ) ) : ?>
-                    <h1>Tableau de Bord - <?= $current_profile ?></h1>
+                    <h1>Tableau de Bord - <?= $this->data['current_profile'] ?></h1>
                 <?php else : ?>
                     <h1>Tableau de Bord Evène</h1>
                 <?php endif; ?>
@@ -19,7 +19,7 @@
                 <?php if( $this->session->userdata( 'username' ) ) : ?>
                     <aside class="header-info">
                         <p>
-                            <?= strtoupper( $current_user ) . " - " . $current_profile ?><br>
+                            <?= strtoupper( $this->data['current_user'] ) . " - " . $this->data['current_profile'] ?><br>
                             Date: <?= date( "d/m/Y" ) ?><br>
                             Dernière M.A.J - [Date MAJ]
                         </p>

@@ -27,12 +27,20 @@ class Home extends Main_Controller {
 		}
 
 		// Load the view
-		$data['title'] = 'Darties &#8226; Accueil';
-
 		if( $this->session->userdata( 'username' ) )
-			$this->template->load( 'default', null, $data );
+			$this->template->load( 'default', 'home/index', array(
+				'title' => 'Darties &#8226; Accueil'
+			));
 		else
-			$this->template->load( 'login', null, $data );
+			$this->template->load( 'login', null, array(
+				'title' => 'Darties &#8226; Connexion'
+			));
+	}
 
+
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect( site_url() );
 	}
 }
