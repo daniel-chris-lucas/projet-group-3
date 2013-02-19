@@ -26,7 +26,6 @@
             background: #eff3f6;
             float: left;
             padding: 10px;
-            height: 260px;
             position: relative;
             margin-top: 120px;
 
@@ -44,6 +43,7 @@
         form {
             background: #fefefe;
             padding: 40px;
+            margin-bottom: 5px;
 
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -78,23 +78,38 @@
 
         <div id="form-wrapper">
             <?= form_open() ?>
-                <p>
-                    <label for="identifiant">Identifiant</label>
-                    <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant" tabindex="1"> 
-                </p>
-                <p>
-                    <label for="mdp">
+                <div class="control-group <?= form_error( 'identifiant' ) ? 'error' : '' ?>">
+                    <label for="identifiant" class="control-label">Identifiant</label>
+                    <div class="controls">
+                        <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant" tabindex="1" 
+                            value="<?= set_value( 'identifiant', '' ) ?>">
+                        <?php if( form_error( 'identifiant' ) ) : ?>
+                            <span class="help-block"><?= form_error( 'identifiant' ) ?></span>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <div class="control-group <?= form_error( 'mdp' ) ? 'error' : '' ?>">
+                    <label for="mdp" class="control-label">
                         Mot de passe 
                         <a href="#" tabindex="4">Vous avez oublié votre mot de passe ?</a>
                     </label>
-                    <input type="password" name="mdp" id="mdp" placeholder="Mot de Passe" tabindex="2">
-                </p>
-                <p>
+                    <div class="controls">
+                        <input type="password" name="mdp" id="mdp" placeholder="Mot de Passe" tabindex="2">
+                        <?php if( form_error( 'identifiant' ) ) : ?>
+                            <span class="help-block"><?= form_error( 'mdp' ) ?></span>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <div>
                     <input type="checkbox" name="souvenir" id="souvenir" tabindex="3">
                     <label for="souvenir">Se souvenir de moi</label>
                     <button type="submit" class="btn btn-primary">Login</button>
-                </p>
+                </div>
             </form>
         </div>
     </div>
     <!-- End wrapper -->
+</body>
+</html>

@@ -28,7 +28,12 @@ class Main_Controller extends MY_Controller
         {
             $this->data['current_user'] = null;
             $this->data['current_profile'] = null;
-        }
-        
+
+            // If username is null and page different to base redirect
+            if( $this->uri->uri_string() != '' )
+            {
+                redirect( base_url() );
+            }
+        }        
     }
 }

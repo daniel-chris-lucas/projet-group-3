@@ -12,4 +12,6 @@
 	$maxFhtWidth = $( '.fht-thead' ).width();
 	$( '.fht-tbody' ).css( 'max-width', $maxFhtWidth );
 
+	$( 'form' ).validate();
+
 })( jQuery );
