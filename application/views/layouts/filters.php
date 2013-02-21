@@ -4,9 +4,9 @@
         <p>
             <select name="indicateur" id="indicateur" class="filter-dropkick">
                 <option>--- Indicateur ---</option>
-                <option value="1">Chiffre d'Affaires</option>
-                <option value="2">Marge Brute</option>
-                <option value="3">Ventes</option>
+                <option value="CA">Chiffre d'Affaires</option>
+                <option value="MB">Marge Brute</option>
+                <option value="V">Ventes</option>
             </select>
             <select name="date" id="date" class="filter-dropkick">
                 <option>--- Date ---</option>

@@ -344,6 +344,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Dan/Desktop/fuelphp-1.5.2/public/.htaccess",
 		"/L/Local Server/sites/projet-interne/assets/js/main.js",
 		"/L/Local Server/sites/projet-interne/application/views/login.php",
 		"/L/Local Server/sites/projet-interne/assets/js/plugins.js",
@@ -470,8 +471,7 @@
 		"/L/Local Server/sites/projet-interne/fuel/core/tests/uri.php",
 		"/L/Local Server/sites/sandbox/projet-web/fuel/app/classes/controller/home.php",
 		"/L/Local Server/sites/sandbox/projet-web/fuel/app/config/config.php",
-		"/L/Local Server/sites/sandbox/projet-web/fuel/app/classes/controller/admin/base.php",
-		"/L/Local Server/sites/sandbox/projet-web/fuel/app/classes/controller/base.php"
+		"/L/Local Server/sites/sandbox/projet-web/fuel/app/classes/controller/admin/base.php"
 	],
 	"find":
 	{
