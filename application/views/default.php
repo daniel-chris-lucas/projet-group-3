@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu">
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/css/style.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/css/dk_theme_darties.css">
+    <link rel="stylesheet" href="<?= base_url( 'assets/css/style.css' ); ?>">
+    <link rel="stylesheet" href="<?= base_url( 'assets/css/dk_theme_darties.css' ); ?>">
 
-    <script src="<?= base_url() ?>assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="<?= base_url( 'assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' ) ?>"></script>
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -42,7 +42,7 @@
 
             <footer>
                 <p>
-                    <img src="<?= base_url() ?>assets/img/logo-krystal-conseil.png" alt="Krystal Conseil" width="36" height="28">
+                    <img src="<?= base_url( 'assets/img/logo-krystal-conseil.png' ) ?>" alt="Krystal Conseil" width="36" height="28">
                     Réalisation par Krystal Conseil
                 </p>
             </footer>
@@ -57,14 +57,22 @@
         document.write('<script src="<?= base_url() ?>assets/js/vendor/jquery-1.8.3.min.js"><\/script>')
     </script>
 
-    <script src="<?= base_url() ?>assets/js/vendor/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/jquery.dropkick-1.0.0.js"></script>
-    <script src="<?= base_url() ?>assets/js/plugins.js"></script>
-    <script src="<?= base_url() ?>assets/js/main.js"></script>
+    <script src="<?= base_url( 'assets/js/vendor/bootstrap.min.js' ) ?>"></script>
+    <!-- <script src="<?= base_url( 'assets/js/jquery.dropkick-1.0.0.js' ) ?>"></script> -->
+    <script src="<?= base_url( 'assets/js/plugins.js' ) ?>"></script>
+    <script src="<?= base_url( 'assets/js/main.js' ) ?>"></script>
 
     <script>
         ( function( $ ) {
-            console.log( 'jQuery is working!' );
+            $( 'select.filter-dropkick' ).on( 'change', function() {
+                $.ajax( {
+                    type: 'POST',
+                    url: '<?= site_url( 'ajax' ) ?>'
+                }).done( function( data ) {
+                    $( '#main' ).empty().html( data );
+
+                });
+            });
         })( jQuery );
     </script>
 </body>
