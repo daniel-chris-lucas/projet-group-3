@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu">
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url( 'assets/css/style.css' ); ?>">
 
-    <script src="<?= base_url() ?>assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="<?= base_url( 'assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' ) ?>"></script>
 
     <style>
         #wrapper {
@@ -74,7 +74,7 @@
 
     <!-- Start wrapper -->
     <div id="wrapper">
-        <img src="<?= base_url() ?>assets/img/login/login-img.png" alt="Connectez vous à l'application Darties" width="891" height="603">
+        <img src="<?= base_url( 'assets/img/login/login-img.png' ) ?>" alt="Connectez vous à l'application Darties" width="891" height="603">
 
         <div id="form-wrapper">
             <?= form_open() ?>

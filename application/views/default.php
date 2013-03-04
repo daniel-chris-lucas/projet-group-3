@@ -61,5 +61,11 @@
     <script src="<?= base_url() ?>assets/js/jquery.dropkick-1.0.0.js"></script>
     <script src="<?= base_url() ?>assets/js/plugins.js"></script>
     <script src="<?= base_url() ?>assets/js/main.js"></script>
+
+    <script>
+        ( function( $ ) {
+            console.log( 'jQuery is working!' );
+        })( jQuery );
+    </script>
 </body>
 </html>

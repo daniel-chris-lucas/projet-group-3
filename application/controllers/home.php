@@ -14,7 +14,7 @@ class Home extends Main_Controller {
 			array(
 				'field' => 'mdp',
 				'label' => 'Mot de Passe',
-				'rules' => 'required|min_length[4]|max_length[20]'
+				'rules' => 'required|min_length[4]|max_length[20]|xss_clean'
 			)
 		);
 

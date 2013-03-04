@@ -10,6 +10,8 @@ class Main_Controller extends MY_Controller
         if( $this->session->userdata( 'username' ) )
         {
             $this->data['current_user'] = $this->session->userdata( 'username' );
+            $this->data['menu'] = get_menu( $this->session->userdata( 'profile' ) );
+            $this->data['active'] = ( $this->uri->segment(1) == null ) ? "accueil" : $this->uri->segment(2);
 
             switch( $this->session->userdata( 'profile' ) )
             {

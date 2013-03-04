@@ -14,7 +14,14 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://darties.loc/';
+if( dirname( __FILE__ ) == '/amd/ladyburn/ubs/ladyburn/projets.2/e_12_darties_cgi3/private_html/application/config' )
+{
+	$config['base_url']	= 'http://www-i.univ-ubs.fr/etud/projets/e_12_darties_cgi3/';
+}
+else
+{
+	$config['base_url']	= 'http://darties.loc/';
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -371,10 +378,12 @@ $config['proxy_ips'] = '';
 | for base controllers and some third-party libraries.
 |
 */
-function __autoload($class)
+function __autoload( $classname )
 {
-	if(strpos($class, 'CI_') !== 0)
+	if( strpos( $classname, 'CI_') !== 0 )
 	{
-		@include_once( APPPATH . 'core/'. $class . EXT );
+		$file = APPPATH . 'core/' . $classname . EXT;
+		if( file_exists( $file ) && is_file( $file ) )
+			@include_once( $file );
 	}
 }

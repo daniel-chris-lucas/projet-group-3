@@ -147,6 +147,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/controllers/home.php",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/login.php",
+			"settings":
+			{
+				"buffer_size": 4501,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -336,17 +352,22 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/index.php",
+		"/S/e_12_darties_cgi3/system/index.html",
+		"/S/e_12_darties_cgi3/application/index.html",
+		"/S/e_12_darties_cgi3/application/config/config.php",
+		"/S/e_12_darties_cgi3/application/config/autoload.php",
+		"/S/e_12_darties_cgi3/.htaccess",
+		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
+		"/S/e_12_darties_cgi3/application/helpers/darties-helper.php",
 		"/S/e_12_darties_cgi3/README.md",
 		"/S/e_12_darties_cgi3/projet-interne-iut.sublime-project",
 		"/F/Git/etc/profile",
 		"/F/Git/home/xonorageous/.ssh/id_rsa.pub",
 		"/F/Git/home/xonorageous/profile",
-		"/S/e_12_darties_cgi3/application/config/config.php",
-		"/S/e_12_darties_cgi3/index.php",
 		"/S/e_12_darties_cgi3/assets/js/main.js",
 		"/S/e_12_darties_cgi3/cda.php",
 		"/S/e_12_darties_cgi3/application/config/database.php",
-		"/S/e_12_darties_cgi3/.htaccess",
 		"/S/e_12_darties_cgi3/darties.sublime-project",
 		"/S/e_12_darties_cgi3/darties.sublime-workspace",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
@@ -458,12 +479,7 @@
 		"/L/Local Server/sites/projet-interne/fuel/app/views/layouts/main-nav.php",
 		"/L/Local Server/sites/projet-interne/fuel/app/config/config.php",
 		"/L/Local Server/sites/sandbox/csv.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/bootstrap.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/contacts.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/aide.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/historique.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/analyse.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/analyse.php"
+		"/L/Local Server/sites/projet-interne/fuel/app/bootstrap.php"
 	],
 	"find":
 	{
@@ -596,8 +612,64 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/home.php",
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/login.php",
+					"settings":
+					{
+						"buffer_size": 4501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2483,
+								2483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
