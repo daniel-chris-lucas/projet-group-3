@@ -336,6 +336,8 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/README.md",
+		"/S/e_12_darties_cgi3/projet-interne-iut.sublime-project",
 		"/F/Git/etc/profile",
 		"/F/Git/home/xonorageous/.ssh/id_rsa.pub",
 		"/F/Git/home/xonorageous/profile",
@@ -461,9 +463,7 @@
 		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/aide.php",
 		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/historique.php",
 		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/analyse.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/analyse.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/dicodonnees.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/dico-donnees.php"
+		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/analyse.php"
 	],
 	"find":
 	{
@@ -481,6 +481,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"]\n",
 			"HOME=",
 			"th",
 			"td width=\"100px !important;\"",
