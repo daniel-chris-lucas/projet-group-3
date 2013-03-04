@@ -64,13 +64,20 @@
 
     <script>
         ( function( $ ) {
+            var url = "url=http://saskatchewan.univ-ubs.fr:8080/SASStoredProcess/do?_username=DARTIES3-2012&_password=P@ssw0rd&_program=%2FUtilisateurs%2FDARTIES3-2012%2FMon+dossier%2Fanalyse_dc&annee=2012&ind=V&_action=execute";
+
             $( 'select.filter-dropkick' ).on( 'change', function() {
                 $.ajax( {
                     type: 'POST',
-                    url: '<?= site_url( 'ajax' ) ?>'
+                    url: '<?= site_url( "ajax" ) ?>',
+                    data: url,
                 }).done( function( data ) {
                     $( '#main' ).empty().html( data );
-
+                }).fail( function( jqXHR, textStatus, errorThrown ) {
+                    console.log( 'Error: ' + jqXHR );
+                    $( '#main' ).empty().html(
+                        '<h2>Erreur</h2><p>Veuillez contacter l\'administrateur pour résoudre ce problème</p>'
+                    );
                 });
             });
         })( jQuery );
