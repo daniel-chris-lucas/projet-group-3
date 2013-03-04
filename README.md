@@ -15,6 +15,12 @@ Toutes les commandes sont dans la ligne de commande
 - Se connecter au depot de github:      
 		git remote origin https://github.com/xonorageous/projet-group-3
 
+- Tutoiel installer github (version portable) avec connexion SSL:
+		http://markashleybell.com/articles/portable-git-windows-setting-home-environment-variable
+
+- Se connecter au depot de github (avec SSL):
+		git remote  set-url origin git@github.com:xonorageous/projet-group-3.git
+
 - Telecharger le projet de github:     
 		git pull origin master
 

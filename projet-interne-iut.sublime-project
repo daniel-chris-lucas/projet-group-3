@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "/S/e_12_darties_cgi3/application",
+			"folder_exclude_patterns": ["cache", "errors", "hooks", "logs"]
+		},
+		{
+			"path": "/S/e_12_darties_cgi3/assets"
+		},
+		{
+			"path": "/S/e_12_darties_cgi3/system"
+		},
+		{
+			"path": "/S/e_12_darties_cgi3",
+			"folder_exclude_patterns": ["application", "assets", "cgi-bin", "Documents", "system"],
+			"file_exclude_patterns": [".gitmodules", "apple-*.png", "build.xml", "favicon.ico", "LICENCE.md", "licence.txt", "oil", "projet-*"]
+		}
+	]
+}

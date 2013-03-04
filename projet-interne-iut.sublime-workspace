@@ -1,0 +1,681 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exte",
+				"extends"
+			],
+			[
+				"menu_",
+				"menu_item_name"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"body_",
+				"body_view"
+			],
+			[
+				"body",
+				"body_view"
+			],
+			[
+				"body_view",
+				"body_view_path"
+			],
+			[
+				"mb_con",
+				"mb_convert_encoding"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"current_",
+				"current_profile"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"sas",
+				"sas_html"
+			],
+			[
+				"num",
+				"number_format"
+			],
+			[
+				"img",
+				"img_name"
+			],
+			[
+				"sub",
+				"sub_total"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"cart_",
+				"cart_products"
+			],
+			[
+				"cart",
+				"cart_products"
+			],
+			[
+				"product",
+				"product_images"
+			],
+			[
+				"ima",
+				"image_dimensions"
+			],
+			[
+				"image_",
+				"image_width"
+			],
+			[
+				"else",
+				"elseif	elseif …"
+			],
+			[
+				"produ",
+				"product_images"
+			],
+			[
+				"original_imag",
+				"original_image_size"
+			],
+			[
+				"up",
+				"uploads"
+			],
+			[
+				"for",
+				"forge"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"act",
+				"act_link"
+			],
+			[
+				"country",
+				"country_id"
+			],
+			[
+				"street",
+				"street_number"
+			],
+			[
+				"in",
+				"int"
+			],
+			[
+				"html",
+				"htmltemplate	html-template"
+			],
+			[
+				"ass",
+				"assc	assertContains"
+			],
+			[
+				"each",
+				"$.each	$.each"
+			],
+			[
+				"if",
+				"ife	if … else"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"tasks",
+				"Tasks: New document"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			],
+			[
+				"snippe",
+				"Snippet: html"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet ",
+				"Snippet: html"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git commit",
+				"Git: Quick Commit"
+			],
+			[
+				"message",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"PACKAGE",
+				"Package Control: Remove Package"
+			],
+			[
+				"commit",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Gist: Add File to Gist"
+			],
+			[
+				"istall",
+				"Package Control: Install Package"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"tas",
+				"Tasks: New document"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"git m",
+				"Git: Commit"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"open",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"create",
+				"Gist: Create Public Gist"
+			],
+			[
+				"lint",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"",
+				"Snippet: jQuery change handler"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"blade",
+				"Set Syntax: Blade"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Git/etc/profile",
+		"/F/Git/home/xonorageous/.ssh/id_rsa.pub",
+		"/F/Git/home/xonorageous/profile",
+		"/S/e_12_darties_cgi3/application/config/config.php",
+		"/S/e_12_darties_cgi3/index.php",
+		"/S/e_12_darties_cgi3/assets/js/main.js",
+		"/S/e_12_darties_cgi3/cda.php",
+		"/S/e_12_darties_cgi3/application/config/database.php",
+		"/S/e_12_darties_cgi3/.htaccess",
+		"/S/e_12_darties_cgi3/darties.sublime-project",
+		"/S/e_12_darties_cgi3/darties.sublime-workspace",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
+		"/S/e_12_darties_cgi3/assets/css/defaultTheme.css",
+		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/demo/test.html",
+		"/S/e_12_darties_cgi3/assets/js/plugins.js",
+		"/S/e_12_darties_cgi3/application/views/default.php",
+		"/L/Uni/LP CSD/Projet Interne/HTML Maquette/Final/palmares_MB_R_en_11.html",
+		"/S/e_12_darties_cgi3/application/views/commercial/palmares.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/_tables.scss",
+		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/css/defaultTheme.css",
+		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/jquery.fixedheadertable.min.js",
+		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/demo/demo.js",
+		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/demo/js/demo.js",
+		"/L/Local Server/sites/projet-interne/assets/js/main.js",
+		"/L/Local Server/sites/projet-interne/assets/js/jquery.dropkick-1.0.0.js",
+		"/L/Local Server/sites/projet-interne/assets/css/fixed-header.css",
+		"/L/Local Server/sites/projet-interne/assets/css/style.css",
+		"/C/Users/Dan/Desktop/tablefixedheader-master/javascript/jquery.fixheadertable.min.js",
+		"/C/Users/Dan/Desktop/tablefixedheader-master/css/base.css",
+		"/L/Local Server/sites/projet-interne/assets/js/plugins.js",
+		"/C/Users/Dan/Desktop/tablefixedheader-master/data.php",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/_commercial.scss",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/_footer.scss",
+		"/L/Local Server/sites/projet-interne/application/controllers/commercial/dicoDonnees.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/commercial/dicoDonnees.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/commercial/dico-donnees.php",
+		"/L/Local Server/sites/projet-interne/application/views/commercial/dico-donnees.php",
+		"/L/Local Server/sites/projet-interne/application/core/MY_Controller.php",
+		"/L/Local Server/sites/projet-interne/application/core/Main_Controller.php",
+		"/L/Local Server/sites/projet-interne/application/views/layouts/main-nav.php",
+		"/L/Local Server/sites/projet-interne/.htaccess",
+		"/L/Local Server/sites/projet-interne/application/config/config.php",
+		"/L/Local Server/sites/projet-interne/application/views/commercial/aide.php",
+		"/L/Local Server/sites/projet-interne/application/views/commercial/contacts.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/commercial/aide.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/commercial/contacts.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/commercial/contacts.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/commercial/contacts.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/commercial/aide.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/commercial/aide.php",
+		"/L/Local Server/sites/projet-interne/application/views/commercial/analyse.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/commercial/analyse.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/commercial/analyse.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/commercial/analyse.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/commercial/palmares.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/commercial/palmares.php",
+		"/L/Local Server/sites/projet-interne/application/views/commercial/palmares.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/commercial/palmares.php",
+		"/L/Local Server/sites/projet-interne/application/views/commercial/historique.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/commercial/historique.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/commercial/historique.php",
+		"/L/Local Server/sites/projet-interne/application/libraries/Template.php",
+		"/L/Local Server/sites/projet-interne/application/views/default.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/home.php",
+		"/L/Local Server/sites/projet-interne/application/views/home/index.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/commercial/historique.php",
+		"/L/Local Server/sites/projet-interne/application/views/layouts/filters.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/home/index.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/home/login.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/main-banner.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/main-nav.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/filters.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/home.php",
+		"/L/Local Server/sites/projet-interne/application/views/home/home.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/template.php",
+		"/L/Local Server/sites/projet-interne/CHECKLIST.TODO",
+		"/L/Local Server/sites/projet-interne/application/config/autoload.php",
+		"/L/Local Server/sites/projet-interne/application/views/login.php",
+		"/L/Local Server/sites/projet-interne/application/views/layouts/main-banner.php",
+		"/L/Local Server/sites/projet-interne/application/config/gas.php",
+		"/C/Users/Dan/Desktop/gas-orm-old-master/gas-orm-old-master/spark.info",
+		"/L/Local Server/sites/projet-interne/application/views/templates/main-banner.php",
+		"/L/Local Server/sites/projet-interne/application/views/templates/layouts/main-banner.php",
+		"/L/Local Server/sites/projet-interne/application/views/templates/login.php",
+		"/L/Local Server/sites/projet-interne/application/views/templates/default.php",
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/base.php",
+		"/L/Local Server/sites/projet-interne/application/core/base.php",
+		"/L/Local Server/sites/projet-interne/projet-interne.sublime-project",
+		"/L/Local Server/sites/projet-interne/application/controllers/base.php",
+		"/L/Local Server/sites/projet-interne/application/config/routes.php",
+		"/L/Local Server/sites/projet-interne/index.php",
+		"/L/Local Server/sites/projet-interne/application/controllers/welcome.php",
+		"/L/Local Server/sites/projet-interne/application/config/smileys.php",
+		"/L/Local Server/sites/projet-interne/application/bootstrap.php",
+		"/L/Local Server/sites/projet-interne/application/classes/Controller/Welcome.php",
+		"/L/Local Server/progs/PHP/php.ini",
+		"/L/Local Server/progs/Apache/conf/httpd.conf",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/home/index.php",
+		"/L/Local Server/progs/PHP5.2/php.ini",
+		"/L/Local Server/progs/PHP5.2/php.ini-dist",
+		"/L/Local Server/progs/PHP5.2/php.ini-recommended",
+		"/L/Local Server/sites/projet-interne/.gitignore",
+		"/L/Local Server/sites/sandbox/mathoumata.css",
+		"/L/Local Server/sites/projet-interne/fuel/LICENSE",
+		"/L/Local Server/sites/projet-interne/assets/css/bootstrap-LICENSE",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/style.scss",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/_bootstrap.scss",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/_main.scss",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/base.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/dico-donnees.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/dicoDonnees.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/home.php",
+		"/L/Local Server/sites/projet-interne/TODO.TODO",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/layouts/template.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/home/login.php",
+		"/L/Local Server/sites/projet-interne/assets/compass/sass/_general.scss",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/layouts/main-nav.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/config/config.php",
+		"/L/Local Server/sites/sandbox/csv.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/bootstrap.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/contacts.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/aide.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/historique.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/analyse.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/analyse.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/dicodonnees.php",
+		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/dico-donnees.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"HOME=",
+			"th",
+			"td width=\"100px !important;\"",
+			"th style=\"width: 100px !important;\"",
+			"td",
+			"pecl",
+			"PHP",
+			"5px",
+			"25px",
+			"2",
+			"/../fuel",
+			" = null;",
+			"3",
+			"25px",
+			"entree",
+			" style=\"width: 87px; height: 65px;\"",
+			"span",
+			"height=65",
+			"\"65\"",
+			" />",
+			"title=\"Restaurant-Owner\" ",
+			"#slider",
+			"#inner-content",
+			"inner-content",
+			"#",
+			"<img",
+			"</a>",
+			"<img",
+			"<img src=\"\" alt=\"\">",
+			"flash",
+			"button",
+			" btn-danger",
+			"delete",
+			"</p>",
+			"p",
+			"<p>",
+			"image_dimensions",
+			"newArray",
+			"width: 25%; ",
+			"name",
+			"set_flash",
+			"$i + 1",
+			"$product->images",
+			");\n",
+			"1",
+			"Price",
+			"price",
+			"category",
+			"description",
+			"name",
+			"user",
+			"users",
+			");\n",
+			"name",
+			"category",
+			"parent",
+			"name",
+			"2",
+			"name",
+			"password",
+			"Password",
+			"password",
+			"/index",
+			"h2",
+			"$current_user",
+			"current_user",
+			"4px",
+			"username",
+			" $",
+			"tel",
+			"user->",
+			"tel",
+			"email",
+			"last_name",
+			"town",
+			"street_number",
+			"birth_day",
+			"email",
+			"first_name",
+			"first",
+			">\n",
+			"first_name",
+			"first",
+			"/../fuel",
+			"Lorem ipsum dolor sit amet",
+			"var ",
+			"transition"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"td",
+			"th",
+			"/fuel",
+			"",
+			"height: 65",
+			"\"65\" style=\"width: 87px; height=65px;\"",
+			"\"65\" style=\"width: 87px; height=\"65px;\"",
+			">",
+			"",
+			".inner-content"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"contact",
+				"projet-web/fuel/app/views/home/contact.php"
+			],
+			[
+				"boot",
+				"fuel/app/bootstrap.php"
+			],
+			[
+				"main",
+				"sttest/css/main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/L/Local Server/sites/sandbox/projet-sas/views/marques/projet-ihm.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}
