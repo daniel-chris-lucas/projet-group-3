@@ -29,7 +29,8 @@ class Home extends Main_Controller {
 		// Load the view
 		if( $this->session->userdata( 'username' ) )
 			$this->template->load( 'default', 'home/index', array(
-				'title' => 'Darties &#8226; Accueil'
+				'title' => 'Darties &#8226; Accueil',
+				'program' => '/Utilisateurs/DARTIES3-2012/Mon dossier/accueil_DC',
 			));
 		else
 			$this->template->load( 'login', null, array(

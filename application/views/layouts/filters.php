@@ -3,28 +3,29 @@
     <form>
         <p>
             <select name="indicateur" id="indicateur" class="filter-dropkick">
-                <option>--- Indicateur ---</option>
+                <option value="null">--- Indicateur ---</option>
                 <option value="CA">Chiffre d'Affaires</option>
                 <option value="MB">Marge Brute</option>
                 <option value="V">Ventes</option>
             </select>
             <select name="date" id="date" class="filter-dropkick">
-                <option>--- Date ---</option>
+                <option value="null">--- Date ---</option>
+                <option value="2012">2012</option>
             </select>
             <select name="devise" id="devise" class="filter-dropkick">
-                <option>--- Devise ---</option>
+                <option value="null">--- Devise ---</option>
             </select>
             <select name="enseigne" id="enseigne" class="filter-dropkick">
-                <option>--- Enseigne ---</option>
+                <option value="null">--- Enseigne ---</option>
             </select>
             <select name="region" id="region" class="filter-dropkick">
-                <option>--- Région ---</option>
+                <option value="null">--- Région ---</option>
             </select>
             <select name="cumul" id="cumul" class="filter-dropkick">
-                <option>--- Cumul ---</option>
+                <option value="null">--- Cumul ---</option>
             </select>
             <select name="produits" id="produits" class="filter-dropkick">
-                <option>--- Famille de Produits ---</option>
+                <option value="null">--- Famille de Produits ---</option>
             </select>
         </p>
     </form>

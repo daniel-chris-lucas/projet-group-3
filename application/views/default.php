@@ -51,6 +51,10 @@
     </div>
     <!-- End wrapper -->
 
+    <div id="loading-bg">
+        <img src="<?= base_url( 'assets/img/ajax-loader.gif' ) ?>" alt="Loading spinner">
+    </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
         window.jQuery || 
@@ -64,18 +68,30 @@
 
     <script>
         ( function( $ ) {
-            var url = "url=http://saskatchewan.univ-ubs.fr:8080/SASStoredProcess/do?_username=DARTIES3-2012&_password=P@ssw0rd&_program=%2FUtilisateurs%2FDARTIES3-2012%2FMon+dossier%2Fanalyse_dc&annee=2012&ind=V&_action=execute";
-
             $( 'select.filter-dropkick' ).on( 'change', function() {
+                $( 'div#loading-bg' ).fadeIn( 'slow' );
                 $.ajax( {
                     type: 'POST',
                     url: '<?= site_url( "ajax" ) ?>',
-                    data: url,
+                    data: {
+                        ind:       $( 'select#indicateur' ).val(),
+                        annee:     $( 'select#date' ).val(),
+                        _devise:   $( 'select#devise' ).val(),
+                        _enseigne: $( 'select#enseigne' ).val(),
+                        _region:   $( 'select#region' ).val(),
+                        _cumul:    $( 'select#cumul' ).val(),
+                        _produits: $( 'select#produits' ).val(),
+                        _program:  '<?= $program ?>',
+                    }
                 }).done( function( data ) {
-                    $( '#main' ).empty().html( data );
+                    $( 'div#loading-bg' ).fadeOut( 'slow' );
+                    $( '#ajax-area' ).empty().html( data );
+                    $( 'table.Table' ).addClass( 'table table-bordered table-hover' ).removeClass( 'Table' );
+                    $( '#ajax-area hr' ).remove();
                 }).fail( function( jqXHR, textStatus, errorThrown ) {
                     console.log( 'Error: ' + jqXHR );
-                    $( '#main' ).empty().html(
+                    $( 'div#loading-bg' ).fadeOut( 'slow' );
+                    $( '#ajax-area' ).empty().html(
                         '<h2>Erreur</h2><p>Veuillez contacter l\'administrateur pour résoudre ce problème</p>'
                     );
                 });
