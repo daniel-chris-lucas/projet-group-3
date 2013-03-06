@@ -39,11 +39,12 @@ class Ajax extends Main_Controller {
 		$ch = curl_init();
 		// set the url, number of POST variables, POST data
 		curl_setopt( $ch, CURLOPT_URL, $url );
+		curl_setopt( $ch, CURLOPT_ENCODING, "UTF-8" );
 		curl_setopt( $ch, CURLOPT_POST, count( $_POST ) );
 		curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields_string );
 
 		// execute POST
-		$result = curl_exec( $ch );
+		$result = curl_exec_utf8( $ch );
 		// close curl connection
 		curl_close( $ch );
 	}

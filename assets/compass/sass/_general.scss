@@ -17,13 +17,13 @@ body {
 }
 
 h1 {
-	@include single-text-shadow( #83a9de, 2px, 2px, 0 );
+	@include single-text-shadow( #83a9de, 2px, 1px, 0 );
 	font-size: 36px;
 	font-family: "Ubuntu", "Trebuchet MS", sans-serif;
 	font-weight: normal;
 	color: #1b1b1b;
 	text-align: center;
-	padding-top: 12px;
+	padding-top: 2px;
 }
 
 h2 {

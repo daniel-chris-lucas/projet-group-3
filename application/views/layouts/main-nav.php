@@ -14,10 +14,5 @@
             </li>
         <?php endforeach; ?>
     </ul>
-    <div class="menu-buttons">
-        <a href="#" class="print-button hide-text" title="Imprimer">Imprimer</a>
-        <a href="#" class="email-button hide-text" title="Envoyer par Email">Envoyer par Email</a>
-        <a href="<?= base_url() ?>home/logout" class="deconnexion-button hide-text">Déconnexion</a>
-    </div>
 </nav>
 <!-- End main nav -->

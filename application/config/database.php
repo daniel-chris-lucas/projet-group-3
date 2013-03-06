@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'darties';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
@@ -54,7 +54,7 @@ $db['default']['password'] = '';
 $db['default']['database'] = '';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
+$db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
@@ -63,6 +63,22 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+$db['darties']['hostname'] = 'ORAETUD';
+$db['darties']['username'] = 'DARTIES3';
+$db['darties']['password'] = 'DARTIES3';
+$db['darties']['database'] = 'DARTIES3';
+$db['darties']['dbdriver'] = 'pdo';
+$db['darties']['dbprefix'] = '';
+$db['darties']['pconnect'] = FALSE;
+$db['darties']['db_debug'] = TRUE;
+$db['darties']['cache_on'] = FALSE;
+$db['darties']['cachedir'] = '';
+$db['darties']['char_set'] = 'utf8';
+$db['darties']['dbcollat'] = 'utf8_general_ci';
+$db['darties']['swap_pre'] = '';
+$db['darties']['autoinit'] = TRUE;
+$db['darties']['stricton'] = FALSE;
 
 
 /* End of file database.php */

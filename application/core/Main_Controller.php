@@ -25,6 +25,16 @@ class Main_Controller extends MY_Controller
                     $this->data['current_profile'] = 'Directeur de Magasin';
                     break;
             }
+            $this->data['active_filters'] = array( 'indicateur', 'date', 'devise', 'enseigne', 'region', 'cumul', 'produits' );
+            $this->data['default_filters'] = array(
+                'indicateur' => 'null',
+                'date' => 'null',
+                'devise' => 'null',
+                'enseigne' => 'null',
+                'region' => 'null',
+                'cumul' => 'null',
+                'produits' => 'null',
+            );
         }
         else
         {

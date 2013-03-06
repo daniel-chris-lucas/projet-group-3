@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-style"
+			],
+			[
+				"filters",
+				"filters-nav"
+			],
+			[
+				"null",
+				"null"
+			],
+			[
 				"print",
 				"print_r"
 			],
@@ -156,37 +168,34 @@
 	"buffers":
 	[
 		{
-			"file": "assets/js/main.js",
+			"file": "application/views/layouts/main-banner.php",
 			"settings":
 			{
-				"buffer_size": 324,
+				"buffer_size": 1636,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/default.php",
+			"file": "application/views/layouts/main-nav.php",
 			"settings":
 			{
-				"buffer_size": 4029,
+				"buffer_size": 779,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<?php if( ! defined( 'BASEPATH' ) ) exit( 'No direct script access allowed' );\n\nclass Ajax extends Main_Controller {\n\n	public function index()\n	{\n		$array = array(\n			'url' => 'http://saskatchewan.univ-ubs.fr:8080/SASStoredProcess/do?_username=DARTIES3-2012',\n			'_password' => 'P@ssw0rd',\n			'_program' => '/Utilisateurs/DARTIES3-2012/Mon dossier/analyse_dc',\n		);\n\n		/*foreach( $_POST as $item => $value )\n		{\n			if( $value && $value != 'null' )\n				$arr['item'] = $value;\n		}*/\n\n		$array['annee'] = '2012';\n		$array['ind'] = 'V';\n		$array['_action'] = 'execute';\n\n		$url = $array['url'];\n		unset( $array['url'] );\n\n		$fields_string = '';\n		// Prepare the url for POST\n		foreach( $array as $key => $value )\n		{\n			$fields_string .= $key . '=' . $value . '&';\n		}\n		$fields_string = rtrim( $fields_string, '&' );\n\n		print_( )\n\n		// open curl connection\n		$ch = curl_init();\n		// set the url, number of POST variables, POST data\n		curl_setopt( $ch, CURLOPT_URL, $url );\n		curl_setopt( $ch, CURLOPT_POST, count( $_POST ) );\n		curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields_string );\n\n		// execute POST\n		$result = curl_exec( $ch );\n		// close curl connection\n		curl_close( $ch );\n\n		print_r( $result );\n	}\n	\n}",
+			"file": "application/config/config.php",
+			"settings":
+			{
+				"buffer_size": 13608,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "application/controllers/ajax.php",
-			"file_size": 1242,
-			"file_write_time": 130069563638580865,
 			"settings":
 			{
-				"buffer_size": 1207,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/layouts/filters.php",
-			"settings":
-			{
-				"buffer_size": 1394,
+				"buffer_size": 1589,
 				"line_ending": "Windows"
 			}
 		}
@@ -194,9 +203,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 265.0,
 		"selected_items":
 		[
+			[
+				"sass",
+				"Set Syntax: SASS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -338,10 +355,6 @@
 				"SublimeLinter: Extract Annotations"
 			],
 			[
-				"css",
-				"Set Syntax: CSS"
-			],
-			[
 				"",
 				"Snippet: jQuery change handler"
 			],
@@ -362,11 +375,11 @@
 				"Set Syntax: Blade"
 			]
 		],
-		"width": 464.0
+		"width": 392.0
 	},
 	"console":
 	{
-		"height": 139.0
+		"height": 90.0
 	},
 	"distraction_free":
 	{
@@ -379,17 +392,33 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/application/views/default.php",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_menus.scss",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_header.scss",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_general.scss",
+		"/S/e_12_darties_cgi3/application/views/login.php",
+		"/S/e_12_darties_cgi3/index.php",
+		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_ajax.scss",
+		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
+		"/S/e_12_darties_cgi3/application/controllers/home.php",
+		"/S/e_12_darties_cgi3/application/index.html",
+		"/S/e_12_darties_cgi3/assets/js/main.js",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
+		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_filters.scss",
+		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
+		"/S/e_12_darties_cgi3/assets/css/style.css",
+		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
+		"/S/e_12_darties_cgi3/application/views/home/index.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
+		"/S/e_12_darties_cgi3/CHECKLIST.TODO",
 		"/S/e_12_darties_cgi3/Documents/arrays.php",
 		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
 		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
-		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/dicoDonnees.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/historique.php",
-		"/S/e_12_darties_cgi3/application/views/login.php",
-		"/S/e_12_darties_cgi3/application/controllers/home.php",
-		"/S/e_12_darties_cgi3/index.php",
 		"/S/e_12_darties_cgi3/system/index.html",
-		"/S/e_12_darties_cgi3/application/index.html",
 		"/S/e_12_darties_cgi3/application/config/config.php",
 		"/S/e_12_darties_cgi3/application/config/autoload.php",
 		"/S/e_12_darties_cgi3/.htaccess",
@@ -399,16 +428,13 @@
 		"/F/Git/etc/profile",
 		"/F/Git/home/xonorageous/.ssh/id_rsa.pub",
 		"/F/Git/home/xonorageous/profile",
-		"/S/e_12_darties_cgi3/assets/js/main.js",
 		"/S/e_12_darties_cgi3/cda.php",
 		"/S/e_12_darties_cgi3/application/config/database.php",
 		"/S/e_12_darties_cgi3/darties.sublime-project",
 		"/S/e_12_darties_cgi3/darties.sublime-workspace",
-		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
 		"/S/e_12_darties_cgi3/assets/css/defaultTheme.css",
 		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/demo/test.html",
 		"/S/e_12_darties_cgi3/assets/js/plugins.js",
-		"/S/e_12_darties_cgi3/application/views/default.php",
 		"/L/Uni/LP CSD/Projet Interne/HTML Maquette/Final/palmares_MB_R_en_11.html",
 		"/S/e_12_darties_cgi3/application/views/commercial/palmares.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
@@ -493,20 +519,7 @@
 		"/L/Local Server/progs/Apache/conf/httpd.conf",
 		"/L/Local Server/sites/projet-interne/fuel/app/views/home/index.php",
 		"/L/Local Server/progs/PHP5.2/php.ini",
-		"/L/Local Server/progs/PHP5.2/php.ini-dist",
-		"/L/Local Server/progs/PHP5.2/php.ini-recommended",
-		"/L/Local Server/sites/projet-interne/.gitignore",
-		"/L/Local Server/sites/sandbox/mathoumata.css",
-		"/L/Local Server/sites/projet-interne/fuel/LICENSE",
-		"/L/Local Server/sites/projet-interne/assets/css/bootstrap-LICENSE",
-		"/L/Local Server/sites/projet-interne/assets/compass/sass/style.scss",
-		"/L/Local Server/sites/projet-interne/assets/compass/sass/_bootstrap.scss",
-		"/L/Local Server/sites/projet-interne/assets/compass/sass/_main.scss",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/base.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/views/commercial/dico-donnees.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/commercial/dicoDonnees.php",
-		"/L/Local Server/sites/projet-interne/fuel/app/classes/controller/home.php",
-		"/L/Local Server/sites/projet-interne/TODO.TODO"
+		"/L/Local Server/progs/PHP5.2/php.ini-dist"
 	],
 	"find":
 	{
@@ -524,6 +537,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"null",
 			"date",
 			"px",
 			"\"]\n",
@@ -641,50 +655,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/js/main.js",
+					"file": "application/views/layouts/main-banner.php",
 					"settings":
 					{
-						"buffer_size": 324,
+						"buffer_size": 1636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/default.php",
-					"settings":
-					{
-						"buffer_size": 4029,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2942,
-								2942
+								1475,
+								1475
 							]
 						],
 						"settings":
@@ -694,31 +681,58 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "application/controllers/ajax.php",
+					"buffer": 1,
+					"file": "application/views/layouts/main-nav.php",
 					"settings":
 					{
-						"buffer_size": 1207,
+						"buffer_size": 779,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								825,
-								825
+								750,
+								750
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/config/config.php",
+					"settings":
+					{
+						"buffer_size": 13608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2856,
+								2856
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -728,25 +742,24 @@
 				},
 				{
 					"buffer": 3,
-					"file": "application/views/layouts/filters.php",
+					"file": "application/controllers/ajax.php",
 					"settings":
 					{
-						"buffer_size": 1394,
+						"buffer_size": 1589,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1282,
-								1282
+								988,
+								1082
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

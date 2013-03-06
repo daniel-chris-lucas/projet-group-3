@@ -5,6 +5,10 @@ class DicoDonnees extends Main_Controller
 
 	public function index()
 	{
+		// set the active filters for the page
+		$active_filters = $this->data['active_filters'];
+		$default_filters = $this->data['default_filters'];
+
 		$handle = fopen( base_url() . "assets/dico-donnees.csv", "r" );
 		// $handle = \File::read( DOCROOT . "assets" . DS . "dico-donnees.csv", true );
 
@@ -29,7 +33,9 @@ class DicoDonnees extends Main_Controller
 		// Load the view
 		$this->template->load( 'default', 'commercial/dico-donnees', array(
 			'title' => 'Darties &#8226 Dictionnaire des Données',
-			'csv' => $csv
+			'csv' => $csv,
+			'active_filters' => $active_filters,
+			'default_filters' => $default_filters,
 		));
 	}
 

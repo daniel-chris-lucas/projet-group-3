@@ -58,7 +58,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
         window.jQuery || 
-        document.write('<script src="<?= base_url() ?>assets/js/vendor/jquery-1.8.3.min.js"><\/script>')
+        document.write('<script src="<?= base_url( "assets/js/vendor/jquery-1.8.3.min.js" ) ?>"><\/script>')
     </script>
 
     <script src="<?= base_url( 'assets/js/vendor/bootstrap.min.js' ) ?>"></script>
@@ -69,7 +69,28 @@
     <script>
         ( function( $ ) {
             $( 'select.filter-dropkick' ).on( 'change', function() {
+                // Update chosen filters list
+                $( '#chosen-filters' ).empty();
+                var filtersArr = {};
+                var filtersStr = '';
+                filtersArr["indicateur"] = $( '#indicateur' ).val();
+                filtersArr["date"] = $( '#date' ).val();
+                filtersArr["devise"] = $( '#devise' ).val();
+                filtersArr["enseigne"] = $( '#enseigne' ).val();
+                filtersArr["region"] = $( '#region' ).val();
+                filtersArr["cumul"] = $( '#cumul' ).val();
+                filtersArr["produits"] = $( '#produits' ).val();
+
+                $.each( filtersArr, function( key, value) {
+                    if( value != "null" ) filtersStr += value + ' / ';
+                });
+                filtersStr = filtersStr.slice( 0, -2 );
+                $( 'p#chosen-filters' ).empty().html( filtersStr );
+
+                // Fade in dark background and loader
                 $( 'div#loading-bg' ).fadeIn( 'slow' );
+
+                // Run ajax request
                 $.ajax( {
                     type: 'POST',
                     url: '<?= site_url( "ajax" ) ?>',
@@ -84,10 +105,18 @@
                         _program:  '<?= $program ?>',
                     }
                 }).done( function( data ) {
+                    // Remove loader
                     $( 'div#loading-bg' ).fadeOut( 'slow' );
+                    // Remove existing content and replace with new content
                     $( '#ajax-area' ).empty().html( data );
+                    // Modify tables to add bootstrap classes
                     $( 'table.Table' ).addClass( 'table table-bordered table-hover' ).removeClass( 'Table' );
                     $( '#ajax-area hr' ).remove();
+                    // Update height of filters bar
+                    $( 'nav#filters-nav' ).height( $( 'div#main' ).height() + parseInt( $( 'div#main' ).css( 'padding-bottom' ) ) +1 );
+                    // Change stored process error messages
+                    $( '#ajax-area' ).children( 'h1' ).empty().html( 'Aucun resultat n\'a été trouvé pour cette requête' );
+                    $( '#ajax-area' ).children( 'h3' ).empty().html( 'Veuillez changer les filtres pour modifier la requête' );
                 }).fail( function( jqXHR, textStatus, errorThrown ) {
                     console.log( 'Error: ' + jqXHR );
                     $( 'div#loading-bg' ).fadeOut( 'slow' );
@@ -96,6 +125,20 @@
                     );
                 });
             });
+
+            // deactivate invalid filters
+            $.each( <?= json_encode( $active_filters ) ?>, function( key, value ) {
+                console.log( value );
+                $( 'select#' + value ).removeAttr( 'disabled' );
+            });
+
+            // load default information for the page
+            var launchAjax = false;
+            $.each( <?= json_encode( $default_filters ) ?>, function( key, value ) {
+                if( value != 'null' ) launchAjax = true;
+                $( 'select#' + key ).val( value );
+            });
+            if( launchAjax ) $( 'select#indicateur' ).trigger( 'change' );
         })( jQuery );
     </script>
 </body>

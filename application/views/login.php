@@ -15,19 +15,31 @@
     <script src="<?= base_url( 'assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' ) ?>"></script>
 
     <style>
+
         #wrapper {
-            width: 1425px;
-            margin: auto;
+            position: relative;
+            width: 100%;
+            height: 100%;
         }
 
-            #wrapper>img { float: left; }
+        #wrapper>img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -664px;
+            margin-top: 50px;
+        }
 
         #form-wrapper {
             background: #eff3f6;
-            float: left;
             padding: 10px;
-            position: relative;
-            margin-top: 120px;
+            width: 429px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin-right: -605px;
+            margin-top: 170px;
+
 
             -webkit-border-radius: 7px;
             -moz-border-radius: 7px;
@@ -74,7 +86,7 @@
 
     <!-- Start wrapper -->
     <div id="wrapper">
-        <img src="<?= base_url( 'assets/img/login/login-img.png' ) ?>" alt="Connectez vous à l'application Darties" width="891" height="603">
+        <img src="<?= base_url( 'assets/img/login/login-img.png' ) ?>" alt="Connectez vous à l'application Darties" width="788" height="533">
 
         <div id="form-wrapper">
             <?= form_open() ?>
