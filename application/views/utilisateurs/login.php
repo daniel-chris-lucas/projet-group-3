@@ -40,7 +40,6 @@
             margin-right: -605px;
             margin-top: 170px;
 
-
             -webkit-border-radius: 7px;
             -moz-border-radius: 7px;
             -ms-border-radius: 7px;
@@ -81,10 +80,6 @@
         <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">
         activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-
-    <?php
-        dump( Gas::factory('utilisateur')->find(109) );
-    ?>
 
     <?= $this->load->view( 'layouts/main-banner' ) ?>
 

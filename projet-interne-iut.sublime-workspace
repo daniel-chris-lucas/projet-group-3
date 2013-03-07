@@ -4,12 +4,28 @@
 		"selected_items":
 		[
 			[
-				"font",
-				"font-style"
+				"json",
+				"json_encode"
+			],
+			[
+				"default",
+				"default_filters"
+			],
+			[
+				"def",
+				"default_filters"
+			],
+			[
+				"acti",
+				"active_filters"
 			],
 			[
 				"filters",
-				"filters-nav"
+				"filtersStr"
+			],
+			[
+				"font",
+				"font-style"
 			],
 			[
 				"null",
@@ -168,26 +184,34 @@
 	"buffers":
 	[
 		{
-			"file": "application/views/layouts/main-banner.php",
+			"file": "application/core/Main_Controller.php",
 			"settings":
 			{
-				"buffer_size": 1636,
+				"buffer_size": 1918,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/layouts/main-nav.php",
+			"file": "application/controllers/commercial/analyse.php",
 			"settings":
 			{
-				"buffer_size": 779,
+				"buffer_size": 650,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/config/config.php",
+			"file": "application/views/layouts/filters.php",
 			"settings":
 			{
-				"buffer_size": 13608,
+				"buffer_size": 1508,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/database.php",
+			"settings":
+			{
+				"buffer_size": 3790,
 				"line_ending": "Windows"
 			}
 		},
@@ -196,6 +220,38 @@
 			"settings":
 			{
 				"buffer_size": 1589,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 6410,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/autoload.php",
+			"settings":
+			{
+				"buffer_size": 3189,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/default.php",
+			"settings":
+			{
+				"buffer_size": 6733,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "system/database/drivers/pdo/pdo_driver.php",
+			"settings":
+			{
+				"buffer_size": 17605,
 				"line_ending": "Windows"
 			}
 		}
@@ -392,35 +448,45 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_driver.php",
+		"/S/e_12_darties_cgi3/application/index.html",
+		"/S/e_12_darties_cgi3/system/database/DB.php",
+		"/S/e_12_darties_cgi3/system/database/DB_driver.php",
+		"/S/e_12_darties_cgi3/application/config/autoload.php",
+		"/S/e_12_darties_cgi3/index.php",
+		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
+		"/S/e_12_darties_cgi3/application/controllers/home.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/historique.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/dicoDonnees.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/contacts.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/aide.php",
+		"/S/e_12_darties_cgi3/application/core/MY_Controller.php",
+		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
+		"/S/e_12_darties_cgi3/application/views/home/index.php",
+		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
 		"/S/e_12_darties_cgi3/application/views/default.php",
-		"/S/e_12_darties_cgi3/assets/compass/sass/_menus.scss",
-		"/S/e_12_darties_cgi3/assets/compass/sass/_header.scss",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_commercial.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_general.scss",
 		"/S/e_12_darties_cgi3/application/views/login.php",
-		"/S/e_12_darties_cgi3/index.php",
-		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
+		"/S/e_12_darties_cgi3/assets/js/main.js",
+		"/S/e_12_darties_cgi3/application/config/database.php",
+		"/S/e_12_darties_cgi3/application/config/config.php",
+		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
+		"/S/e_12_darties_cgi3/application/views/layouts/main-banner.php",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_menus.scss",
+		"/S/e_12_darties_cgi3/assets/compass/sass/_header.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_ajax.scss",
 		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
-		"/S/e_12_darties_cgi3/application/controllers/home.php",
-		"/S/e_12_darties_cgi3/application/index.html",
-		"/S/e_12_darties_cgi3/assets/js/main.js",
-		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
-		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_filters.scss",
 		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
 		"/S/e_12_darties_cgi3/assets/css/style.css",
-		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
-		"/S/e_12_darties_cgi3/application/views/home/index.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/CHECKLIST.TODO",
 		"/S/e_12_darties_cgi3/Documents/arrays.php",
-		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
 		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
-		"/S/e_12_darties_cgi3/application/controllers/commercial/dicoDonnees.php",
-		"/S/e_12_darties_cgi3/application/controllers/commercial/historique.php",
 		"/S/e_12_darties_cgi3/system/index.html",
-		"/S/e_12_darties_cgi3/application/config/config.php",
-		"/S/e_12_darties_cgi3/application/config/autoload.php",
 		"/S/e_12_darties_cgi3/.htaccess",
 		"/S/e_12_darties_cgi3/application/helpers/darties-helper.php",
 		"/S/e_12_darties_cgi3/README.md",
@@ -429,7 +495,6 @@
 		"/F/Git/home/xonorageous/.ssh/id_rsa.pub",
 		"/F/Git/home/xonorageous/profile",
 		"/S/e_12_darties_cgi3/cda.php",
-		"/S/e_12_darties_cgi3/application/config/database.php",
 		"/S/e_12_darties_cgi3/darties.sublime-project",
 		"/S/e_12_darties_cgi3/darties.sublime-workspace",
 		"/S/e_12_darties_cgi3/assets/css/defaultTheme.css",
@@ -437,7 +502,6 @@
 		"/S/e_12_darties_cgi3/assets/js/plugins.js",
 		"/L/Uni/LP CSD/Projet Interne/HTML Maquette/Final/palmares_MB_R_en_11.html",
 		"/S/e_12_darties_cgi3/application/views/commercial/palmares.php",
-		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
 		"/L/Local Server/sites/projet-interne/assets/compass/sass/_tables.scss",
 		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/css/defaultTheme.css",
 		"/C/Users/Dan/Desktop/Fixed-Header-Table-master/jquery.fixedheadertable.min.js",
@@ -511,15 +575,7 @@
 		"/L/Local Server/sites/projet-interne/application/controllers/base.php",
 		"/L/Local Server/sites/projet-interne/application/config/routes.php",
 		"/L/Local Server/sites/projet-interne/index.php",
-		"/L/Local Server/sites/projet-interne/application/controllers/welcome.php",
-		"/L/Local Server/sites/projet-interne/application/config/smileys.php",
-		"/L/Local Server/sites/projet-interne/application/bootstrap.php",
-		"/L/Local Server/sites/projet-interne/application/classes/Controller/Welcome.php",
-		"/L/Local Server/progs/PHP/php.ini",
-		"/L/Local Server/progs/Apache/conf/httpd.conf",
-		"/L/Local Server/sites/projet-interne/fuel/app/views/home/index.php",
-		"/L/Local Server/progs/PHP5.2/php.ini",
-		"/L/Local Server/progs/PHP5.2/php.ini-dist"
+		"/L/Local Server/sites/projet-interne/application/controllers/welcome.php"
 	],
 	"find":
 	{
@@ -537,6 +593,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"page",
+			"$default_filters['indicateur']",
+			"arr{ ",
+			":",
+			"default",
 			"null",
 			"date",
 			"px",
@@ -655,51 +716,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/layouts/main-banner.php",
+					"file": "application/core/Main_Controller.php",
 					"settings":
 					{
-						"buffer_size": 1636,
+						"buffer_size": 1918,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1475,
-								1475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/layouts/main-nav.php",
-					"settings":
-					{
-						"buffer_size": 779,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								750,
-								750
+								1409,
+								1409
 							]
 						],
 						"settings":
@@ -715,19 +748,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "application/config/config.php",
+					"buffer": 1,
+					"file": "application/controllers/commercial/analyse.php",
 					"settings":
 					{
-						"buffer_size": 13608,
+						"buffer_size": 650,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2856,
-								2856
+								361,
+								361
 							]
 						],
 						"settings":
@@ -741,7 +774,61 @@
 					"type": "text"
 				},
 				{
+					"buffer": 2,
+					"file": "application/views/layouts/filters.php",
+					"settings":
+					{
+						"buffer_size": 1508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								1358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
 					"buffer": 3,
+					"file": "application/config/database.php",
+					"settings":
+					{
+						"buffer_size": 3790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3300,
+								3300
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "application/controllers/ajax.php",
 					"settings":
 					{
@@ -752,8 +839,8 @@
 						"selection":
 						[
 							[
-								988,
-								1082
+								499,
+								499
 							]
 						],
 						"settings":
@@ -763,6 +850,114 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 6410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/config/autoload.php",
+					"settings":
+					{
+						"buffer_size": 3189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1666,
+								1666
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/views/default.php",
+					"settings":
+					{
+						"buffer_size": 6733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6520,
+								6520
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "system/database/drivers/pdo/pdo_driver.php",
+					"settings":
+					{
+						"buffer_size": 17605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2039,
+								2074
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

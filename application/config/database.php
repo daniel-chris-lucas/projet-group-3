@@ -48,6 +48,19 @@
 $active_group = 'darties';
 $active_record = TRUE;
 
+$tns = "
+	( DESCRIPTION =
+		( ADDRESS =
+			( PROTOCOL = tcp )
+			( HOST = oraetud.univ-ubs.fr)
+			( PORT = 1521)
+		)
+		( CONNECT_DATA = 
+			( SID = ORAETUD )
+		)
+	)
+";
+
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = '';
 $db['default']['password'] = '';
@@ -64,10 +77,10 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-$db['darties']['hostname'] = 'ORAETUD';
+$db['darties']['hostname'] = 'oci:dbname=' . $tns;
 $db['darties']['username'] = 'DARTIES3';
 $db['darties']['password'] = 'DARTIES3';
-$db['darties']['database'] = 'DARTIES3';
+// $db['darties']['database'] = 'ORAETUD';
 $db['darties']['dbdriver'] = 'pdo';
 $db['darties']['dbprefix'] = '';
 $db['darties']['pconnect'] = FALSE;

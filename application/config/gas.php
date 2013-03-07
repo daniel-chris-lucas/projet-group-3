@@ -73,7 +73,7 @@ $config['extensions'] = array('dummy', 'html', 'jquery');
 |
 */
 
-$config['autoload_extensions'] = TRUE;
+$config['autoload_extensions'] = FALSE;
 
 /*
 | -------------------------------------------------------------------
