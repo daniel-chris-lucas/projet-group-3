@@ -192,10 +192,10 @@
 			}
 		},
 		{
-			"file": "application/models/utilisateur.php",
+			"file": "application/models/utilisateur_m.php",
 			"settings":
 			{
-				"buffer_size": 340,
+				"buffer_size": 413,
 				"line_ending": "Windows",
 				"name": "<?php"
 			}
@@ -204,7 +204,23 @@
 			"file": "application/controllers/utilisateurs.php",
 			"settings":
 			{
-				"buffer_size": 881,
+				"buffer_size": 883,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/utilisateurs/login.php",
+			"settings":
+			{
+				"buffer_size": 4748,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/autoload.php",
+			"settings":
+			{
+				"buffer_size": 3175,
 				"line_ending": "Windows"
 			}
 		},
@@ -213,14 +229,6 @@
 			"settings":
 			{
 				"buffer_size": 1371,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/config/routes.php",
-			"settings":
-			{
-				"buffer_size": 1540,
 				"line_ending": "Windows"
 			}
 		}
@@ -417,6 +425,14 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/application/config/database.php",
+		"/S/e_12_darties_cgi3/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php",
+		"/S/e_12_darties_cgi3/application/config/routes.php",
+		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_driver.php",
+		"/S/e_12_darties_cgi3/system/database/DB_active_rec.php",
+		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_result.php",
+		"/S/e_12_darties_cgi3/system/database/DB.php",
+		"/S/e_12_darties_cgi3/application/libraries/Gas_extension_jquery.php",
 		"/S/e_12_darties_cgi3/application/controllers/utilisateurs.php",
 		"/S/e_12_darties_cgi3/application/views/utilisateurs/login.php",
 		"/S/e_12_darties_cgi3/application/views/login.php",
@@ -430,11 +446,8 @@
 		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
 		"/S/e_12_darties_cgi3/index.php",
 		"/S/e_12_darties_cgi3/application/controllers/home.php",
-		"/S/e_12_darties_cgi3/application/config/database.php",
-		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_driver.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/index.html",
-		"/S/e_12_darties_cgi3/system/database/DB.php",
 		"/S/e_12_darties_cgi3/system/database/DB_driver.php",
 		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
@@ -539,12 +552,7 @@
 		"/L/Local Server/sites/projet-interne/application/config/gas.php",
 		"/C/Users/Dan/Desktop/gas-orm-old-master/gas-orm-old-master/spark.info",
 		"/L/Local Server/sites/projet-interne/application/views/templates/main-banner.php",
-		"/L/Local Server/sites/projet-interne/application/views/templates/layouts/main-banner.php",
-		"/L/Local Server/sites/projet-interne/application/views/templates/login.php",
-		"/L/Local Server/sites/projet-interne/application/views/templates/default.php",
-		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/base.php",
-		"/L/Local Server/sites/projet-interne/application/core/base.php",
-		"/L/Local Server/sites/projet-interne/projet-interne.sublime-project"
+		"/L/Local Server/sites/projet-interne/application/views/templates/layouts/main-banner.php"
 	],
 	"find":
 	{
@@ -686,7 +694,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -701,8 +709,8 @@
 						"selection":
 						[
 							[
-								278,
-								278
+								380,
+								418
 							]
 						],
 						"settings":
@@ -712,25 +720,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/models/utilisateur.php",
+					"file": "application/models/utilisateur_m.php",
 					"settings":
 					{
-						"buffer_size": 340,
+						"buffer_size": 413,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								334,
-								334
+								360,
+								360
 							]
 						],
 						"settings":
@@ -749,15 +757,15 @@
 					"file": "application/controllers/utilisateurs.php",
 					"settings":
 					{
-						"buffer_size": 881,
+						"buffer_size": 883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								742,
-								742
+								480,
+								480
 							]
 						],
 						"settings":
@@ -766,7 +774,61 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/utilisateurs/login.php",
+					"settings":
+					{
+						"buffer_size": 4748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2692,
+								2692
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/config/autoload.php",
+					"settings":
+					{
+						"buffer_size": 3175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -778,7 +840,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "application/controllers/home.php",
 					"settings":
 					{
@@ -800,32 +862,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "application/config/routes.php",
-					"settings":
-					{
-						"buffer_size": 1540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								434,
-								434
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -866,7 +902,7 @@
 		"rows":
 		[
 			0.0,
-			0.884284176534,
+			0.656739083044,
 			1.0
 		]
 	},

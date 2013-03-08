@@ -12,6 +12,8 @@ class Utilisateurs extends Main_Controller
 	public function login()
 	{
 		// Redirect user if already logged in
+		$this->utilisateur->loggedin() == FALSE || redirect( site_url() );
+
 		// Set up the form
 		$this->form_validation->set_rules( array(
 			'identifiant' => array(
@@ -29,9 +31,14 @@ class Utilisateurs extends Main_Controller
 		// Process the form
 		if( $this->form_validation->run() )
 		{
-			if( $this->utilisateur_m->login() );
+			if( $this->utilisateur->login() )
 			{
-				
+				redirect( site_url() );
+			}
+			else
+			{
+				$this->session->set_flashdata( 'flash_error', 'Identifiant ou mot de passe invalide' );
+				redirect( 'utilisateurs/login', 'refresh' );
 			}
 		}
 
@@ -39,6 +46,12 @@ class Utilisateurs extends Main_Controller
 		$this->template->load( 'utilisateurs/login', null, array(
 			'title' => 'Darties &#8226; Connexion'
 		));
+	}
+
+
+	public function logout()
+	{
+		$this->utilisateur->logout();
 	}
 
 }

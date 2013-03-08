@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="<?= base_url( 'assets/css/dk_theme_darties.css' ); ?>">
 
     <script src="<?= base_url( 'assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' ) ?>"></script>
+
+    <style>
+        .SystemTitle {
+            font-size: 18px !important;
+        }
+    </style>
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -62,6 +68,7 @@
     </script>
 
     <script src="<?= base_url( 'assets/js/vendor/bootstrap.min.js' ) ?>"></script>
+    <script src="<?= base_url( 'assets/js/vendor/highcharts.js' ) ?>"></script>
     <!-- <script src="<?= base_url( 'assets/js/jquery.dropkick-1.0.0.js' ) ?>"></script> -->
     <script src="<?= base_url( 'assets/js/plugins.js' ) ?>"></script>
     <script src="<?= base_url( 'assets/js/main.js' ) ?>"></script>
@@ -112,11 +119,14 @@
                     // Modify tables to add bootstrap classes
                     $( 'table.Table' ).addClass( 'table table-bordered table-hover' ).removeClass( 'Table' );
                     $( '#ajax-area hr' ).remove();
+                    // hard coded: to fix later
+                    $( '.branch:nth-child(1), .branch:nth-child(2)' ).hide();
                     // Update height of filters bar
                     $( 'nav#filters-nav' ).height( $( 'div#main' ).height() + parseInt( $( 'div#main' ).css( 'padding-bottom' ) ) +1 );
                     // Change stored process error messages
                     $( '#ajax-area' ).children( 'h1' ).empty().html( 'Aucun resultat n\'a été trouvé pour cette requête' );
                     $( '#ajax-area' ).children( 'h3' ).empty().html( 'Veuillez changer les filtres pour modifier la requête' );
+                
                 }).fail( function( jqXHR, textStatus, errorThrown ) {
                     console.log( 'Error: ' + jqXHR );
                     $( 'div#loading-bg' ).fadeOut( 'slow' );

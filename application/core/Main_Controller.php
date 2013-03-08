@@ -7,27 +7,28 @@ class Main_Controller extends MY_Controller
         parent::__construct();
 
         // import models used all the time
-        $this->load->model( 'utilisateur_m' );
+        $this->load->model( 'utilisateur' );
 
         // Check if username is in the Session & retrieve information on connected user
-        /*if( $this->session->userdata( 'username' ) )
+        if( $this->session->userdata( 'id' ) )
         {
-            $this->data['current_user'] = $this->session->userdata( 'username' );
+            $this->data['current_user'] = $this->utilisateur->get_by_id( $this->session->userdata( 'id' ) );
             $this->data['menu'] = get_menu( $this->session->userdata( 'profile' ) );
             $this->data['active'] = ( $this->uri->segment(1) == null ) ? "accueil" : $this->uri->segment(2);
 
             switch( $this->session->userdata( 'profile' ) )
             {
-                case 'commercial' :
-                    $this->data['current_profile'] = 'Directeur Commercial';
+                case 'Directeur Commercial' :
+                    $this->data['current_profile'] = 'commercial';
                     break;
-                case 'regional' :
-                    $this->data['current_profile'] = 'Directeur Régional';
+                case 'Directeur Regional' :
+                    $this->data['current_profile'] = 'regional';
                     break;
-                case 'magasin' :
-                    $this->data['current_profile'] = 'Directeur de Magasin';
+                case 'Directeur Magasin' :
+                    $this->data['current_profile'] = 'magasin';
                     break;
             }
+
             $this->data['active_filters'] = array( 'indicateur', 'date', 'devise', 'enseigne', 'region', 'cumul', 'produits' );
             $this->data['default_filters'] = array(
                 'indicateur' => 'null',
@@ -41,8 +42,8 @@ class Main_Controller extends MY_Controller
         }
         else
         {
-            $this->data['current_user'] = null;
-            $this->data['current_profile'] = null;
-        }*/        
+            if( current_url() != site_url( 'utilisateurs/login' ) )
+                redirect( 'utilisateurs/login' );
+        }        
     }
 }

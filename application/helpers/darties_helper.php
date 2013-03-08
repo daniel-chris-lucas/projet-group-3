@@ -15,7 +15,7 @@ function get_menu( $profile )
                 'aide' => array( 'nom' => 'Aide', 'img_width' => '22', 'img_height' => '21', 'lien' => null ),
             );
             break;
-        case 'regional' :
+        case 'Directeur Regional' :
             $menu = array(
                 'accueil' => array( 'nom' => 'Accueil', 'img_width' => '23', 'img_height' => '20', 'lien' => base_url() ),
                 'historique' => array( 'nom' => 'Historique', 'img_width' => '23', 'img_height' => '20', 'lien' => null ),
@@ -26,7 +26,7 @@ function get_menu( $profile )
                 'aide' => array( 'nom' => 'Aide', 'img_width' => '22', 'img_height' => '21', 'lien' => null ),
             );
             break;
-        case 'magasin' :
+        case 'Directeur Magasin' :
             $menu = array(
                 'accueil' => array( 'nom' => 'Accueil', 'img_width' => '23', 'img_height' => '20', 'lien' => base_url() ),
                 'historique' => array( 'nom' => 'Historique', 'img_width' => '23', 'img_height' => '20', 'lien' => null ),

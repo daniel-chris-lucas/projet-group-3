@@ -5,7 +5,7 @@
             <li<?= $item_name == $this->data['active'] ? ' class="active"' : '' ?>>
                 <a href="<?= isset( $item['lien'] )
                         ? $item['lien']
-                        : site_url( $this->session->userdata( 'profile' ) . '/' . $item_name ) ?>"
+                        : site_url( $this->data['current_profile'] . '/' . $item_name ) ?>"
                 >
                     <img src="<?= base_url( 'assets/img/menus/menu-' . $item_name  . '.png' ) ?>" 
                             width="<?= $item['img_width'] ?>" height="<? $item['img_height'] ?>">
