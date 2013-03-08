@@ -7,10 +7,10 @@ class Main_Controller extends MY_Controller
         parent::__construct();
 
         // import models used all the time
-        $this->load->model( 'utilisateur' );
+        $this->load->model( 'utilisateur_m' );
 
         // Check if username is in the Session & retrieve information on connected user
-        if( $this->session->userdata( 'username' ) )
+        /*if( $this->session->userdata( 'username' ) )
         {
             $this->data['current_user'] = $this->session->userdata( 'username' );
             $this->data['menu'] = get_menu( $this->session->userdata( 'profile' ) );
@@ -43,6 +43,6 @@ class Main_Controller extends MY_Controller
         {
             $this->data['current_user'] = null;
             $this->data['current_profile'] = null;
-        }        
+        }*/        
     }
 }

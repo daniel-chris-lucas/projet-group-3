@@ -61,7 +61,7 @@ $tns = "
 	)
 ";
 
-$db['default']['hostname'] = 'localhost';
+/*$db['default']['hostname'] = 'localhost';
 $db['default']['username'] = '';
 $db['default']['password'] = '';
 $db['default']['database'] = '';
@@ -75,12 +75,12 @@ $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['default']['stricton'] = FALSE;*/
 
 $db['darties']['hostname'] = 'oci:dbname=' . $tns;
 $db['darties']['username'] = 'DARTIES3';
 $db['darties']['password'] = 'DARTIES3';
-// $db['darties']['database'] = 'ORAETUD';
+$db['darties']['database'] = '';
 $db['darties']['dbdriver'] = 'pdo';
 $db['darties']['dbprefix'] = '';
 $db['darties']['pconnect'] = FALSE;

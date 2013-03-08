@@ -187,71 +187,40 @@
 			"file": "application/core/Main_Controller.php",
 			"settings":
 			{
-				"buffer_size": 1918,
+				"buffer_size": 1818,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/controllers/commercial/analyse.php",
+			"file": "application/models/utilisateur.php",
 			"settings":
 			{
-				"buffer_size": 650,
+				"buffer_size": 340,
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "application/controllers/utilisateurs.php",
+			"settings":
+			{
+				"buffer_size": 881,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/layouts/filters.php",
+			"file": "application/controllers/home.php",
 			"settings":
 			{
-				"buffer_size": 1508,
+				"buffer_size": 1371,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/config/database.php",
+			"file": "application/config/routes.php",
 			"settings":
 			{
-				"buffer_size": 3790,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/ajax.php",
-			"settings":
-			{
-				"buffer_size": 1589,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 6410,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/config/autoload.php",
-			"settings":
-			{
-				"buffer_size": 3189,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/default.php",
-			"settings":
-			{
-				"buffer_size": 6733,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "system/database/drivers/pdo/pdo_driver.php",
-			"settings":
-			{
-				"buffer_size": 17605,
+				"buffer_size": 1540,
 				"line_ending": "Windows"
 			}
 		}
@@ -259,9 +228,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 265.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
 			[
 				"sass",
 				"Set Syntax: SASS"
@@ -281,10 +254,6 @@
 			[
 				"tasks",
 				"Tasks: New document"
-			],
-			[
-				"php",
-				"Set Syntax: PHP"
 			],
 			[
 				"snippet",
@@ -448,14 +417,26 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/application/controllers/utilisateurs.php",
+		"/S/e_12_darties_cgi3/application/views/utilisateurs/login.php",
+		"/S/e_12_darties_cgi3/application/views/login.php",
+		"/S/e_12_darties_cgi3/application/config/autoload.php",
+		"/S/e_12_darties_cgi3/application/libraries/Gas.php",
+		"/S/e_12_darties_cgi3/application/views/default.php",
+		"/S/e_12_darties_cgi3/application/config/config.php",
+		"/S/e_12_darties_cgi3/application/config/gas.php",
+		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
+		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
+		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
+		"/S/e_12_darties_cgi3/index.php",
+		"/S/e_12_darties_cgi3/application/controllers/home.php",
+		"/S/e_12_darties_cgi3/application/config/database.php",
 		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_driver.php",
+		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/index.html",
 		"/S/e_12_darties_cgi3/system/database/DB.php",
 		"/S/e_12_darties_cgi3/system/database/DB_driver.php",
-		"/S/e_12_darties_cgi3/application/config/autoload.php",
-		"/S/e_12_darties_cgi3/index.php",
 		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
-		"/S/e_12_darties_cgi3/application/controllers/home.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/historique.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/dicoDonnees.php",
@@ -465,27 +446,19 @@
 		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/views/home/index.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
-		"/S/e_12_darties_cgi3/application/views/default.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_commercial.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_general.scss",
-		"/S/e_12_darties_cgi3/application/views/login.php",
 		"/S/e_12_darties_cgi3/assets/js/main.js",
-		"/S/e_12_darties_cgi3/application/config/database.php",
-		"/S/e_12_darties_cgi3/application/config/config.php",
-		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
 		"/S/e_12_darties_cgi3/application/views/layouts/main-banner.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_menus.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_header.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_ajax.scss",
 		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_filters.scss",
-		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
 		"/S/e_12_darties_cgi3/assets/css/style.css",
-		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/CHECKLIST.TODO",
 		"/S/e_12_darties_cgi3/Documents/arrays.php",
-		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
 		"/S/e_12_darties_cgi3/system/index.html",
 		"/S/e_12_darties_cgi3/.htaccess",
 		"/S/e_12_darties_cgi3/application/helpers/darties-helper.php",
@@ -571,11 +544,7 @@
 		"/L/Local Server/sites/projet-interne/application/views/templates/default.php",
 		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/base.php",
 		"/L/Local Server/sites/projet-interne/application/core/base.php",
-		"/L/Local Server/sites/projet-interne/projet-interne.sublime-project",
-		"/L/Local Server/sites/projet-interne/application/controllers/base.php",
-		"/L/Local Server/sites/projet-interne/application/config/routes.php",
-		"/L/Local Server/sites/projet-interne/index.php",
-		"/L/Local Server/sites/projet-interne/application/controllers/welcome.php"
+		"/L/Local Server/sites/projet-interne/projet-interne.sublime-project"
 	],
 	"find":
 	{
@@ -593,6 +562,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$this->form_validation->set_rules( array(\n			'identifiant' => array(\n				'field' => 'identifiant',\n				'label' => 'Identifiant',\n				'rules' => 'required|min_length[3]|max_length[20]|xss_clean'\n			),\n			'mdp' => array(\n				'field' => 'mdp',\n				'label' => 'Mot de Passe',\n				'rules' => 'required|min_length[4]|max_length[20]|xss_clean'\n			),\n		));",
 			"page",
 			"$default_filters['indicateur']",
 			"arr{ ",
@@ -716,7 +686,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -724,15 +694,15 @@
 					"file": "application/core/Main_Controller.php",
 					"settings":
 					{
-						"buffer_size": 1918,
+						"buffer_size": 1818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1409,
-								1409
+								278,
+								278
 							]
 						],
 						"settings":
@@ -749,22 +719,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "application/controllers/commercial/analyse.php",
+					"file": "application/models/utilisateur.php",
 					"settings":
 					{
-						"buffer_size": 650,
+						"buffer_size": 340,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								334,
+								334
 							]
 						],
 						"settings":
 						{
+							"auto_name": "<?php",
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -775,126 +746,78 @@
 				},
 				{
 					"buffer": 2,
-					"file": "application/views/layouts/filters.php",
+					"file": "application/controllers/utilisateurs.php",
 					"settings":
 					{
-						"buffer_size": 1508,
+						"buffer_size": 881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								153,
-								1358
+								742,
+								742
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 3,
-					"file": "application/config/database.php",
+					"file": "application/controllers/home.php",
 					"settings":
 					{
-						"buffer_size": 3790,
+						"buffer_size": 1371,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3300,
-								3300
+								177,
+								177
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "application/controllers/ajax.php",
+					"file": "application/config/routes.php",
 					"settings":
 					{
-						"buffer_size": 1589,
+						"buffer_size": 1540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								499,
-								499
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "index.php",
-					"settings":
-					{
-						"buffer_size": 6410,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "application/config/autoload.php",
-					"settings":
-					{
-						"buffer_size": 3189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1666,
-								1666
+								434,
+								434
 							]
 						],
 						"settings":
@@ -902,62 +825,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "application/views/default.php",
-					"settings":
-					{
-						"buffer_size": 6733,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6520,
-								6520
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1260.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "system/database/drivers/pdo/pdo_driver.php",
-					"settings":
-					{
-						"buffer_size": 17605,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2039,
-								2074
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 630.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -982,6 +850,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -992,6 +866,7 @@
 		"rows":
 		[
 			0.0,
+			0.884284176534,
 			1.0
 		]
 	},
