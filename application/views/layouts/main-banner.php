@@ -21,11 +21,13 @@
                 <?php endif; ?>
             </td>
             <td width="202">
-                <div class="header-buttons">
-                    <a href="#" class="print-button hide-text" title="Imprimer">Imprimer</a>
-                    <a href="#" class="email-button hide-text" title="Envoyer par Email">Envoyer par Email</a>
-                    <a href="<?= site_url( 'utilisateurs/logout' ) ?>" class="deconnexion-button hide-text">Déconnexion</a>
-                </div>
+                <?php if( $this->utilisateur->loggedin() ) : ?>
+                    <div class="header-buttons">
+                        <a href="#" class="print-button hide-text" title="Imprimer">Imprimer</a>
+                        <a href="#" class="email-button hide-text" title="Envoyer par Email">Envoyer par Email</a>
+                        <a href="<?= site_url( 'utilisateurs/logout' ) ?>" class="deconnexion-button hide-text">Déconnexion</a>
+                    </div>
+                <?php endif; ?>
             </td>
         </tr>
     </table>

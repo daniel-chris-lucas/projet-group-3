@@ -82,12 +82,27 @@
     <![endif]-->
     <?= $this->load->view( 'layouts/main-banner' ) ?>
 
+    <?php if( $this->session->flashdata( 'flash_error' ) ) : ?>
+        <div class="alert alert-error">
+            <?= $this->session->flashdata( 'flash_error' ) ?>
+        </div>
+    <?php elseif( $this->session->flashdata( 'flash_info' ) ) : ?>
+        <div class="alert alert-info">
+            <?= $this->session->flashdata( 'flash_info' ) ?>
+        </div>
+    <?php endif; ?>
+
     <!-- Start wrapper -->
     <div id="wrapper">
         <img src="<?= base_url( 'assets/img/login/login-img.png' ) ?>" alt="Connectez vous à l'application Darties" width="788" height="533">
 
         <div id="form-wrapper">
             <?= form_open() ?>
+                <?php if( $this->session->flashdata( 'flash_form_error' ) ) : ?>
+                    <div class="alert alert-error">
+                        <?= $this->session->flashdata( 'flash_form_error' ) ?>
+                    </div>
+                <?php endif; ?>
                 <div class="control-group <?= form_error( 'identifiant' ) ? 'error' : '' ?>">
                     <label for="identifiant" class="control-label">Identifiant</label>
                     <div class="controls">
@@ -102,13 +117,13 @@
                 <div class="control-group <?= form_error( 'mdp' ) ? 'error' : '' ?>">
                     <label for="mdp" class="control-label">
                         Mot de passe 
-                        <a href="#" tabindex="4">Vous avez oublié votre mot de passe ?</a>
+                        <a href="<?= site_url( 'utilisateurs/forgotten_password' ) ?>" tabindex="4">
+                            Vous avez oublié votre mot de passe ?
+                        </a>
                     </label>
                     <div class="controls">
-                        <input type="password" name="mdp" id="mdp" placeholder="Mot de Passe" tabindex="2">
-                        <?php if( form_error( 'identifiant' ) ) : ?>
+                        <input type="password" name="mdp" id="mdp" placeholder="Mot de Passe" tabindex="2" autocomplete="Off">
                             <span class="help-block"><?= form_error( 'mdp' ) ?></span>
-                        <?php endif; ?>
                     </div>
                 </div>
 

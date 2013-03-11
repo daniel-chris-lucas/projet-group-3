@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"forgotte",
+				"forgotten_password"
+			],
+			[
 				"json",
 				"json_encode"
 			],
@@ -187,32 +191,15 @@
 			"file": "application/core/Main_Controller.php",
 			"settings":
 			{
-				"buffer_size": 1818,
+				"buffer_size": 2015,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/models/utilisateur_m.php",
-			"settings":
-			{
-				"buffer_size": 413,
-				"line_ending": "Windows",
-				"name": "<?php"
 			}
 		},
 		{
 			"file": "application/controllers/utilisateurs.php",
 			"settings":
 			{
-				"buffer_size": 883,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/utilisateurs/login.php",
-			"settings":
-			{
-				"buffer_size": 4748,
+				"buffer_size": 3308,
 				"line_ending": "Windows"
 			}
 		},
@@ -225,10 +212,18 @@
 			}
 		},
 		{
-			"file": "application/controllers/home.php",
+			"file": "application/views/layouts/main-banner.php",
 			"settings":
 			{
-				"buffer_size": 1371,
+				"buffer_size": 1820,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/utilisateurs/login.php",
+			"settings":
+			{
+				"buffer_size": 5236,
 				"line_ending": "Windows"
 			}
 		}
@@ -425,49 +420,60 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/application/controllers/home.php",
+		"/S/e_12_darties_cgi3/application/views/default.php",
+		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
+		"/S/e_12_darties_cgi3/application/views/utilisateurs/change-password.php",
+		"/S/e_12_darties_cgi3/application/views/utilisateurs/forgotten.php",
+		"/S/e_12_darties_cgi3/application/models/utilisateur.php",
+		"/S/e_12_darties_cgi3/application/language/english/form_validation_lang.php",
+		"/S/e_12_darties_cgi3/application/views/emails/forgotten_password.php",
+		"/S/e_12_darties_cgi3/application/config/email.php",
+		"/S/e_12_darties_cgi3/application/config/config.php",
+		"/S/e_12_darties_cgi3/assets/js/main.js",
+		"/S/e_12_darties_cgi3/system/database/DB_active_rec.php",
+		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
+		"/S/e_12_darties_cgi3/application/views/login.php",
+		"/S/e_12_darties_cgi3/application/models/profil.php",
+		"/S/e_12_darties_cgi3/application/views/utilisateurs/login.php",
+		"/S/e_12_darties_cgi3/application/models/utilisateur_m.php",
+		"/S/e_12_darties_cgi3/index.php",
+		"/S/e_12_darties_cgi3/application/config/datamapper.php",
+		"/H/Git/git-bash.bat",
+		"/F/Graphique/exemple pie.html",
+		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
+		"/S/e_12_darties_cgi3/application/config/routes.php",
 		"/S/e_12_darties_cgi3/application/config/database.php",
 		"/S/e_12_darties_cgi3/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php",
-		"/S/e_12_darties_cgi3/application/config/routes.php",
 		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_driver.php",
-		"/S/e_12_darties_cgi3/system/database/DB_active_rec.php",
 		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_result.php",
 		"/S/e_12_darties_cgi3/system/database/DB.php",
 		"/S/e_12_darties_cgi3/application/libraries/Gas_extension_jquery.php",
 		"/S/e_12_darties_cgi3/application/controllers/utilisateurs.php",
-		"/S/e_12_darties_cgi3/application/views/utilisateurs/login.php",
-		"/S/e_12_darties_cgi3/application/views/login.php",
 		"/S/e_12_darties_cgi3/application/config/autoload.php",
 		"/S/e_12_darties_cgi3/application/libraries/Gas.php",
-		"/S/e_12_darties_cgi3/application/views/default.php",
-		"/S/e_12_darties_cgi3/application/config/config.php",
 		"/S/e_12_darties_cgi3/application/config/gas.php",
 		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
 		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
 		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
-		"/S/e_12_darties_cgi3/index.php",
-		"/S/e_12_darties_cgi3/application/controllers/home.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/index.html",
 		"/S/e_12_darties_cgi3/system/database/DB_driver.php",
-		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/palmares.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/historique.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/dicoDonnees.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/contacts.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/aide.php",
 		"/S/e_12_darties_cgi3/application/core/MY_Controller.php",
-		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/views/home/index.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_commercial.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_general.scss",
-		"/S/e_12_darties_cgi3/assets/js/main.js",
 		"/S/e_12_darties_cgi3/application/views/layouts/main-banner.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_menus.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_header.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_ajax.scss",
-		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_filters.scss",
 		"/S/e_12_darties_cgi3/assets/css/style.css",
 		"/S/e_12_darties_cgi3/CHECKLIST.TODO",
@@ -541,18 +547,7 @@
 		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/home/login.php",
 		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/main-banner.php",
 		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/main-nav.php",
-		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/filters.php",
-		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/classes/controller/home.php",
-		"/L/Local Server/sites/projet-interne/application/views/home/home.php",
-		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/template.php",
-		"/L/Local Server/sites/projet-interne/CHECKLIST.TODO",
-		"/L/Local Server/sites/projet-interne/application/config/autoload.php",
-		"/L/Local Server/sites/projet-interne/application/views/login.php",
-		"/L/Local Server/sites/projet-interne/application/views/layouts/main-banner.php",
-		"/L/Local Server/sites/projet-interne/application/config/gas.php",
-		"/C/Users/Dan/Desktop/gas-orm-old-master/gas-orm-old-master/spark.info",
-		"/L/Local Server/sites/projet-interne/application/views/templates/main-banner.php",
-		"/L/Local Server/sites/projet-interne/application/views/templates/layouts/main-banner.php"
+		"/L/Local Server/sites/projet-interne/Documents/Fuel PHP/fuel/app/views/layouts/filters.php"
 	],
 	"find":
 	{
@@ -570,6 +565,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"error",
+			");\n",
+			"Enregistrer",
+			"=>",
+			" $",
+			"user",
+			"FALSE",
+			"forgotten_password",
+			"_where",
+			"idutilisateur",
+			"_where",
+			"escape",
+			"_where",
+			"where",
 			"$this->form_validation->set_rules( array(\n			'identifiant' => array(\n				'field' => 'identifiant',\n				'label' => 'Identifiant',\n				'rules' => 'required|min_length[3]|max_length[20]|xss_clean'\n			),\n			'mdp' => array(\n				'field' => 'mdp',\n				'label' => 'Mot de Passe',\n				'rules' => 'required|min_length[4]|max_length[20]|xss_clean'\n			),\n		));",
 			"page",
 			"$default_filters['indicateur']",
@@ -694,7 +703,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -702,15 +711,15 @@
 					"file": "application/core/Main_Controller.php",
 					"settings":
 					{
-						"buffer_size": 1818,
+						"buffer_size": 2015,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								380,
-								418
+								1925,
+								1925
 							]
 						],
 						"settings":
@@ -720,52 +729,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 405.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/models/utilisateur_m.php",
-					"settings":
-					{
-						"buffer_size": 413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								360,
-								360
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "application/controllers/utilisateurs.php",
 					"settings":
 					{
-						"buffer_size": 883,
+						"buffer_size": 3308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								480,
-								480
+								974,
+								974
 							]
 						],
 						"settings":
@@ -774,41 +756,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "application/views/utilisateurs/login.php",
-					"settings":
-					{
-						"buffer_size": 4748,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2692,
-								2692
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "application/config/autoload.php",
 					"settings":
 					{
@@ -828,40 +782,63 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 5,
-					"file": "application/controllers/home.php",
+					"buffer": 3,
+					"file": "application/views/layouts/main-banner.php",
 					"settings":
 					{
-						"buffer_size": 1371,
+						"buffer_size": 1820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								1329,
+								1329
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/utilisateurs/login.php",
+					"settings":
+					{
+						"buffer_size": 5236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2849,
+								2849
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1215.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -886,12 +863,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -902,7 +873,6 @@
 		"rows":
 		[
 			0.0,
-			0.656739083044,
 			1.0
 		]
 	},

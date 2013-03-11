@@ -30,6 +30,16 @@
 
     <?= $this->load->view( "layouts/main-banner" ) ?>
 
+    <?php if( $this->session->flashdata( 'flash_error' ) ) : ?>
+        <div class="alert alert-error">
+            <?= $this->session->flashdata( 'flash_error' ) ?>
+        </div>
+    <?php elseif( $this->session->flashdata( 'flash_info' ) ) : ?>
+        <div class="alert alert-info">
+            <?= $this->session->flashdata( 'flash_info' ) ?>
+        </div>
+    <?php endif; ?>
+
     <!-- Start wrapper -->
     <div id="wrapper">
         <?= $this->load->view( 'layouts/filters' ) ?>

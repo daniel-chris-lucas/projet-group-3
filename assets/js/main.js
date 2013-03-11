@@ -18,4 +18,7 @@
 	// Set up height and position of filters
 	$( 'nav#filters-nav' ).css( 'margin-top', $( 'nav#main-nav' ).height() + 1 );
 	$( 'nav#filters-nav' ).height( $( 'div#main' ).height() + parseInt( $( 'div#main' ).css( 'padding-bottom' ) ) +1 );
+
+	// Hide error messages
+	$( 'div.alert' ).delay( 4000 ).slideUp( 'slow' );
 })( jQuery );
