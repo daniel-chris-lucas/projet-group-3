@@ -19,4 +19,24 @@ class Site extends CI_Model
 		return $this->db->get( 'temps' )->result();		
 	}
 
+
+	function get_years( $year1 = 2011, $year2 = 2012 )
+	{
+		$this->db->select( 'annee' );
+		$this->db->distinct();
+		$this->db->where( 'annee', $year1 );
+		$this->db->or_where( 'annee', $year2 );
+		$this->db->order_by( 'annee desc' );
+		return $this->db->get( 'temps' )->result();
+	}
+
+
+	function get_products()
+	{
+		$corbeille = "'" . 'Y' . "'";
+		$this->db->select( 'idfamille_produit, lib_famille' );
+		$this->db->where( 'corbeille_fam_prod', $corbeille, FALSE );
+		return $this->db->get( 'famille_produit' )->result();
+	}
+
 }

@@ -8,6 +8,7 @@ class Home extends Main_Controller {
 		$active_filters = $this->data['active_filters'];
 		$active_filters = array( 'date' );
 		$default_filters = $this->data['default_filters'];
+		$default_filters['date'] = '26';
 
 		// Load the view
 		$this->template->load( 'default', 'home/index', array(

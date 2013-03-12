@@ -3,7 +3,7 @@
 }
 
 #main table {
-	color: #666;
+	color: #444;
 	width: 96%;
 	margin: auto;
 
@@ -31,7 +31,7 @@
 /* TABLE COMING FROM AJAX */
 #ajax-area table {
 	.negative { color: red !important; }
-	.positive { color: green !important; }
+	.positive { color: #4fb334 !important; }
 	.blue-bg td { @extend .table-th; }
 	.blue-bg:hover th, .blue-bg:hover td { @extend .table-th; }
 

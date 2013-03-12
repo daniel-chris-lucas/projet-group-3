@@ -50,7 +50,7 @@
 
             <!-- Start main -->
             <div id="main" role="main" style="position: relative;" <?= $this->data['current_profile'] 
-                    ? 'class="' . $this->data['current_profile'] . '"' 
+                    ? 'class="' . $this->data['current_profile'] . ' ' . $this->data['active'] . '"' 
                     : '' ?>>
                 <?= $body ?>
             </div>
@@ -85,26 +85,8 @@
     <script>
         ( function( $ ) {
             $( 'select.filter-dropkick' ).on( 'change', function() {
-                // Update chosen filters list
-                $( '#chosen-filters' ).empty();
-                var filtersArr = {};
-                var filtersStr = '';
-                var selected = '';
-                filtersArr["indicateur"] = $( '#indicateur' ).val();
-                selected = $( '#date' ).find( 'option:selected' );
-                filtersArr["date"] = selected.data( 'display' );
-                filtersArr["devise"] = $( '#devise' ).val();
-                filtersArr["enseigne"] = $( '#enseigne' ).val();
-                filtersArr["region"] = $( '#region' ).val();
-                filtersArr["cumul"] = $( '#cumul' ).val();
-                filtersArr["produits"] = $( '#produits' ).val();
-
-                $.each( filtersArr, function( key, value) {
-                    if( value != "null" ) filtersStr += value + ' / ';
-                });
-                filtersStr = filtersStr.slice( 0, -2 );
-                $( 'p#chosen-filters' ).empty().html( filtersStr );
-
+                updateFilters();
+                
                 // Fade in dark background and loader
                 $( 'div#loading-bg' ).fadeIn( 'slow' );
 
@@ -114,46 +96,33 @@
                     url: '<?= site_url( "ajax" ) ?>',
                     data: {
                         ind:       $( 'select#indicateur' ).val(),
-                        temps_t:     $( 'select#date' ).val(),
+                        temps_t:   $( 'select#date' ).val(),
+                        annee:     $( 'select#annee' ).val(),
                         _devise:   $( 'select#devise' ).val(),
                         _enseigne: $( 'select#enseigne' ).val(),
                         _region:   $( 'select#region' ).val(),
                         _cumul:    $( 'select#cumul' ).val(),
                         _produits: $( 'select#produits' ).val(),
-                        _program:  '<?= $program ?>',
-                    }
+                        _program:  '<?= isset( $program ) ? $program : null ?>',
+                    },
+                    timeout: 10000
                 }).done( function( data ) {
-                    // Remove loader
-                    $( 'div#loading-bg' ).fadeOut( 'slow' );
-                    // Remove existing content and replace with new content
-                    $( '#ajax-area' ).empty().html( data );
-                    // Modify tables to add bootstrap classes
-                    $( 'table.Table' ).addClass( 'table table-bordered table-hover' ).removeClass( 'Table' );
-                    $( '#ajax-area hr' ).remove();
-                    $( '#ajax-area table tbody tr:last-child' ).addClass( 'blue-bg' );
-                    $.each( $( '#ajax-area table tbody tr td:last-child' ), function( key, value ) {
-                        var val = $( value ).html();
-                        var res = $.trim( parseFloat( val.slice( 0, -1 ) ) );
-                        res > 0 ? $( value ).addClass( 'positive' ) : $( value ).addClass( 'negative' );
-                    });
-                    // Update height of filters bar
-                    $( 'nav#filters-nav' ).height( $( 'div#main' ).height() + parseInt( $( 'div#main' ).css( 'padding-bottom' ) ) +1 );
-                    // Change stored process error messages
-                    $( '#ajax-area' ).children( 'h1' ).empty().html( 'Aucun resultat n\'a été trouvé pour cette requête' );
-                    $( '#ajax-area' ).children( 'h3' ).empty().html( 'Veuillez changer les filtres pour modifier la requête' );
-                
+                    removeLoader( data );
+                    bootstrapTables();
+                    colorCoding();
+                    updateFiltersBar();
+                    changeSASErrors();
+                    addCharts();
                 }).fail( function( jqXHR, textStatus, errorThrown ) {
-                    console.log( 'Error: ' + jqXHR );
                     $( 'div#loading-bg' ).fadeOut( 'slow' );
                     $( '#ajax-area' ).empty().html(
-                        '<h2>Erreur</h2><p>Veuillez contacter l\'administrateur pour résoudre ce problème</p>'
+                        '<h2>Erreur</h2><h3>Veuillez contacter l\'administrateur pour résoudre ce problème</h3>'
                     );
                 });
             });
 
             // deactivate invalid filters
             $.each( <?= json_encode( $active_filters ) ?>, function( key, value ) {
-                console.log( value );
                 $( 'select#' + value ).removeAttr( 'disabled' );
             });
 
@@ -164,6 +133,89 @@
                 $( 'select#' + key ).val( value );
             });
             if( launchAjax ) $( 'select#indicateur' ).trigger( 'change' );
+
+
+            // Update chosen filters list
+            function updateFilters() {
+                $( '#chosen-filters' ).empty();
+                var filtersArr = {};
+                var filtersStr = '';
+                filtersArr["indicateur"] = $( '#indicateur' ).val();
+                var selected = $( '#date' ).find( 'option:selected' );
+                filtersArr["date"] = selected.data( 'display' ) != null ? selected.data( 'display' ) : "null";
+                filtersArr["annee"] = $( '#annee' ).val() != null ? $( '#annee' ).val() : "null";
+                filtersArr["devise"] = $( '#devise' ).val();
+                filtersArr["enseigne"] = $( '#enseigne' ).val();
+                filtersArr["region"] = $( '#region' ).val();
+                filtersArr["cumul"] = $( '#cumul' ).val();
+                var selected = $( '#produits' ).find( 'option:selected' );
+                filtersArr["produits"] = selected.data( 'display' ) != null ? selected.data( 'display' ) : "null";
+
+                $.each( filtersArr, function( key, value) {
+                    if( value != "null" ) filtersStr += value + ' / ';
+                });
+                filtersStr = filtersStr.slice( 0, -2 );
+                $( 'p#chosen-filters' ).empty().html( filtersStr );
+            }
+
+            // Update height of filters bar
+            function updateFiltersBar() {
+                $( 'nav#filters-nav' ).height( $( 'div#main' ).height() + parseInt( $( 'div#main' ).css( 'padding-bottom' ) ) +1 );
+            }
+
+            
+            // Modify tables to add bootstrap classes
+            function bootstrapTables() {
+                $( 'table.Table' ).addClass( 'table table-bordered table-hover' ).removeClass( 'Table' );
+                $( '#ajax-area hr' ).remove();
+                $( '#ajax-area table tbody tr:last-child' ).addClass( 'blue-bg' );
+            }
+
+            
+            function removeLoader( data ) {
+                $( 'div#loading-bg' ).fadeOut( 'slow' );
+                $( '#ajax-area' ).empty().html( data );
+            }
+
+
+            // add red and green to percentages in commercial home page
+            function colorCoding() {
+                $.each( $( '.commercial.accueil #ajax-area table tbody tr td:last-child' ), function( key, value ) {
+                    var val = $( value ).html();
+                    var res = $.trim( parseFloat( val.slice( 0, -1 ) ) );
+                    res > 0 ? $( value ).addClass( 'positive' ) : $( value ).addClass( 'negative' );
+                });
+            }
+
+
+            // Change stored process error messages
+            function changeSASErrors() {
+                $( '#ajax-area' ).children( 'h1' ).empty().html( 'Aucun resultat n\'a été trouvé pour cette requête' );
+                $( '#ajax-area' ).children( 'h3' ).empty().html( 'Veuillez changer les filtres pour modifier la requête' );
+            }
+
+
+            // Get values from tables for charts
+            function getValues() {
+                // remove useless headings
+                $( '.SysTitleAndFooterContainer' ).remove();
+                $( '.commercial.analyse #ajax-area .branch:nth-child( 1 ) table' )
+                        .addClass( 'highchart-table' );
+                $( '.commercial.analyse #ajax-area .branch:nth-child( 2 ) table' )
+                        .addClass( 'highchart-table' );
+
+                $.each( $( '.highchart-table' ), function( key, value ) {
+                    console.log( this );
+                    //console.log( )
+                });
+                //console.log( $( '.highchart-table thead tr:last-child th' ).html() );
+            }
+
+
+            // add Highcharts graphs
+            function addCharts() {
+                getValues();
+            }
         })( jQuery );
     </script>
 </body>
