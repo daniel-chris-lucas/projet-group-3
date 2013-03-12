@@ -45,7 +45,9 @@
 | the active record class
 */
 
-$active_group = 'darties';
+$active_group = dirname( __FILE__) == 'L:\Local Server\sites\projet-interne\application\config'
+					? 'default'
+					: 'darties';
 $active_record = TRUE;
 
 $tns = "
@@ -61,11 +63,11 @@ $tns = "
 	)
 ";
 
-/*$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['hostname'] = 'mysql:host=localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'root';
+$db['default']['database'] = 'darties';
+$db['default']['dbdriver'] = 'pdo';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
@@ -75,7 +77,7 @@ $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;*/
+$db['default']['stricton'] = FALSE;
 
 $db['darties']['hostname'] = 'oci:dbname=' . $tns;
 $db['darties']['username'] = 'DARTIES3';
