@@ -49,8 +49,8 @@
             <?= $this->load->view( 'layouts/main-nav' ) ?>
 
             <!-- Start main -->
-            <div id="main" role="main" <?= $this->session->userdata( 'profile' ) 
-                    ? 'class="' . $this->session->userdata( 'profile' ) . '"' 
+            <div id="main" role="main" style="position: relative;" <?= $this->data['current_profile'] 
+                    ? 'class="' . $this->data['current_profile'] . '"' 
                     : '' ?>>
                 <?= $body ?>
             </div>
@@ -79,7 +79,6 @@
 
     <script src="<?= base_url( 'assets/js/vendor/bootstrap.min.js' ) ?>"></script>
     <script src="<?= base_url( 'assets/js/vendor/highcharts.js' ) ?>"></script>
-    <!-- <script src="<?= base_url( 'assets/js/jquery.dropkick-1.0.0.js' ) ?>"></script> -->
     <script src="<?= base_url( 'assets/js/plugins.js' ) ?>"></script>
     <script src="<?= base_url( 'assets/js/main.js' ) ?>"></script>
 
@@ -90,8 +89,10 @@
                 $( '#chosen-filters' ).empty();
                 var filtersArr = {};
                 var filtersStr = '';
+                var selected = '';
                 filtersArr["indicateur"] = $( '#indicateur' ).val();
-                filtersArr["date"] = $( '#date' ).val();
+                selected = $( '#date' ).find( 'option:selected' );
+                filtersArr["date"] = selected.data( 'display' );
                 filtersArr["devise"] = $( '#devise' ).val();
                 filtersArr["enseigne"] = $( '#enseigne' ).val();
                 filtersArr["region"] = $( '#region' ).val();
@@ -113,7 +114,7 @@
                     url: '<?= site_url( "ajax" ) ?>',
                     data: {
                         ind:       $( 'select#indicateur' ).val(),
-                        annee:     $( 'select#date' ).val(),
+                        temps_t:     $( 'select#date' ).val(),
                         _devise:   $( 'select#devise' ).val(),
                         _enseigne: $( 'select#enseigne' ).val(),
                         _region:   $( 'select#region' ).val(),
@@ -129,8 +130,12 @@
                     // Modify tables to add bootstrap classes
                     $( 'table.Table' ).addClass( 'table table-bordered table-hover' ).removeClass( 'Table' );
                     $( '#ajax-area hr' ).remove();
-                    // hard coded: to fix later
-                    $( '.branch:nth-child(1), .branch:nth-child(2)' ).hide();
+                    $( '#ajax-area table tbody tr:last-child' ).addClass( 'blue-bg' );
+                    $.each( $( '#ajax-area table tbody tr td:last-child' ), function( key, value ) {
+                        var val = $( value ).html();
+                        var res = $.trim( parseFloat( val.slice( 0, -1 ) ) );
+                        res > 0 ? $( value ).addClass( 'positive' ) : $( value ).addClass( 'negative' );
+                    });
                     // Update height of filters bar
                     $( 'nav#filters-nav' ).height( $( 'div#main' ).height() + parseInt( $( 'div#main' ).css( 'padding-bottom' ) ) +1 );
                     // Change stored process error messages

@@ -99,12 +99,12 @@ class Utilisateur extends CI_Model
 		$this->load->library( 'email' );
 		$this->load->helper( 'string' );
 
-		$this->email->from( $this->config->load( 'email' ), 'DARTIES' );
+		$this->email->from( $this->email->smtp_user, 'DARTIES' );
 		$this->email->to( $user->MAIL );
 		$this->email->subject( 'Darties: Mot de passe oublié' );
 		$this->email->set_mailtype( 'html' );
 		$msg = $this->load->view( 'emails/forgotten_password', array(
-			$link = site_url( 'utilisateurs/change_password/' . $user->LOGIN . '/' . random_string( 'alnum', 16 ) )
+			'link' => site_url( 'utilisateurs/change_password/' . $user->LOGIN . '/' . random_string( 'alnum', 16 ) )
 		));
 		$this->email->message( $msg );
 

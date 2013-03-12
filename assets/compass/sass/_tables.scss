@@ -1,3 +1,7 @@
+.table-th {
+	background: rgba(223, 236, 234, .8);
+}
+
 #main table {
 	color: #666;
 	width: 96%;
@@ -12,7 +16,7 @@
 		}
 
 		th {
-			background: #dfecea;
+			@extend .table-th;
 			font-size: 13px;
 			text-align: center;
 			vertical-align: middle;
@@ -20,25 +24,22 @@
 	}
 
 	tbody tr:hover td, tbody tr:hover th {
-		background: #c5dcec;
+		background: rgba(197, 220, 236, .8);
 	}	
 }
 
-.table1 {
-	position: relative;
-	left: 50%;
-	margin-left: -520px !important;
-	float: left;
-	clear: none;
+/* TABLE COMING FROM AJAX */
+#ajax-area table {
+	.negative { color: red !important; }
+	.positive { color: green !important; }
+	.blue-bg td { @extend .table-th; }
+	.blue-bg:hover th, .blue-bg:hover td { @extend .table-th; }
+
+	tr td {
+		text-align: right;
+	}
 }
 
-.table2 {
-	position: relative;
-	right: 50%;
-	margin-right: -520px !important;
-	float: right;
-	clear: none;
-}
 
 /* SCROLLING TABLES */
 .fht-table {

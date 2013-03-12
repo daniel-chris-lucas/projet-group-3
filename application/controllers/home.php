@@ -4,10 +4,12 @@ class Home extends Main_Controller {
 
 	public function index()
 	{
-		// Load the view
+		// Set default and active filters
 		$active_filters = $this->data['active_filters'];
+		$active_filters = array( 'date' );
 		$default_filters = $this->data['default_filters'];
 
+		// Load the view
 		$this->template->load( 'default', 'home/index', array(
 			'title' => 'Darties &#8226; Accueil',
 			'program' => '/Utilisateurs/DARTIES3-2012/Mon dossier/accueil_DC',

@@ -8,10 +8,12 @@ class Main_Controller extends MY_Controller
 
         // import models used all the time
         $this->load->model( 'utilisateur' );
+        $this->load->model( 'site' );
 
         // if user isn't logged in check the cookie
         if( $this->input->cookie( 'remember' ) )
         {
+            // check if the user has a login cookie
             $user = $this->utilisateur->fetch_cookie();
 
             // if the user exists log him in
@@ -24,6 +26,7 @@ class Main_Controller extends MY_Controller
             // if not remove the cookie
             else
             {
+                // destroy login cookie: set the time in the past
                 $expire = time() - 60*60*24*30;
                 setcookie( 'remember', '', $expire, '/etud/projets/e_12_darties_cgi3/', '.www-i.univ-ubs.fr' );
                 unset( $_COOKIE['remember'] );
@@ -50,6 +53,7 @@ class Main_Controller extends MY_Controller
                     break;
             }
 
+            // set the filters for the application
             $this->data['active_filters'] = array( 'indicateur', 'date', 'devise', 'enseigne', 'region', 'cumul', 'produits' );
             $this->data['default_filters'] = array(
                 'indicateur' => 'null',
@@ -60,6 +64,9 @@ class Main_Controller extends MY_Controller
                 'cumul' => 'null',
                 'produits' => 'null',
             );
+
+            // retrieve list of filters from the db
+            $this->data['dates'] = $this->site->get_dates();
         }
         else
         {

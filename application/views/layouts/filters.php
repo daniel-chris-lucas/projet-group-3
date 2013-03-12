@@ -10,7 +10,11 @@
             </select>
             <select name="date" id="date" class="filter-dropkick" disabled>
                 <option value="null">--- Date ---</option>
-                <option value="2012">2012</option>
+                <?php foreach( $this->data['dates'] as $date ) : ?>
+                    <option value="<?= $date->IDTEMPS ?>" data-display="<?= "{$date->MOIS} {$date->ANNEE}" ?>">
+                        <?= "{$date->MOIS} {$date->ANNEE}" ?>
+                    </option>
+                <?php endforeach; ?>
             </select>
             <select name="devise" id="devise" class="filter-dropkick" disabled>
                 <option value="null">--- Devise ---</option>
