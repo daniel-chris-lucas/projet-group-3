@@ -7,10 +7,10 @@ class Palmares extends Main_Controller
 	{
 		// set the active filters for the page
 		$active_filters = $this->data['active_filters'];
-		$active_filters = array( 'date', 'region', 'produits' );
+		$active_filters = array( 'indicateur', 'date', 'produits' );
 		$default_filters = $this->data['default_filters'];
-		$default_filters['date'] = '26';
-		$default_filters['region'] = 'null';
+		$default_filters['indicateur'] = 'CA';
+		$default_filters['date'] = '25';
 		$default_filters['produits'] = '1';
 
 		// Load the view

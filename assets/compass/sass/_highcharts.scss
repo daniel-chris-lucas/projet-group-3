@@ -1,0 +1,23 @@
+.highchart-holder {
+	float: left;
+	margin-right: 40px;
+	width: 400px;
+	height: 280px;
+	overflow: hidden;
+	position: relative; 
+	padding-top: 20px;
+
+	h5 {
+		margin-bottom: -2px;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+
+	.commercial.analyse &:first-child {
+		margin-left: 45px;
+	}
+}

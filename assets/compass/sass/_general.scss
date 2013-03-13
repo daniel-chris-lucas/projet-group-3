@@ -57,3 +57,25 @@ h4 {
         margin-left: -24px;
     }
 }
+
+pre { display: none !important; }
+
+.FWContainer {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+
+    .trialHider {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        height: 20px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        border: 1px solid #b7b6b6;
+        border-bottom: none;
+    }
+}

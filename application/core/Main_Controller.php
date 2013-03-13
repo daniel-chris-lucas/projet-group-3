@@ -54,7 +54,7 @@ class Main_Controller extends MY_Controller
             }
 
             // set the filters for the application
-            $this->data['active_filters'] = array( 'indicateur', 'date', 'annee', 'devise', 'enseigne', 'region', 'cumul', 'produits' );
+            $this->data['active_filters'] = array();
             $this->data['default_filters'] = array(
                 'indicateur' => 'null',
                 'date' => 'null',

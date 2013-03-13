@@ -192,18 +192,50 @@
 	"buffers":
 	[
 		{
-			"file": "application/controllers/utilisateurs.php",
+			"file": "application/models/site.php",
 			"settings":
 			{
-				"buffer_size": 3323,
+				"buffer_size": 986,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/utilisateurs/login.php",
+			"file": "application/views/layouts/filters.php",
 			"settings":
 			{
-				"buffer_size": 5417,
+				"buffer_size": 2780,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/home.php",
+			"settings":
+			{
+				"buffer_size": 732,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/commercial/analyse.php",
+			"settings":
+			{
+				"buffer_size": 652,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/commercial/palmares.php",
+			"settings":
+			{
+				"buffer_size": 680,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/commercial/palmares.php",
+			"settings":
+			{
+				"buffer_size": 1324,
 				"line_ending": "Windows"
 			}
 		},
@@ -211,7 +243,55 @@
 			"file": "application/models/utilisateur.php",
 			"settings":
 			{
-				"buffer_size": 3391,
+				"buffer_size": 3386,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/core/Main_Controller.php",
+			"settings":
+			{
+				"buffer_size": 3270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/default.php",
+			"settings":
+			{
+				"buffer_size": 9477,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/home/index.php",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/compass/sass/_tables.scss",
+			"settings":
+			{
+				"buffer_size": 1956,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/main.js",
+			"settings":
+			{
+				"buffer_size": 666,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/compass/sass/_commercial.scss",
+			"settings":
+			{
+				"buffer_size": 208,
 				"line_ending": "Windows"
 			}
 		}
@@ -408,6 +488,14 @@
 	},
 	"file_history":
 	[
+		"/S/e_12_darties_cgi3/assets/compass/sass/_general.scss",
+		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
+		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
+		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
+		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
+		"/S/e_12_darties_cgi3/application/models/utilisateur.php",
+		"/S/e_12_darties_cgi3/application/controllers/utilisateurs.php",
+		"/S/e_12_darties_cgi3/application/views/utilisateurs/login.php",
 		"/S/e_12_darties_cgi3/application/views/layouts/main-banner.php",
 		"/S/e_12_darties_cgi3/application/core/Main_Controller.php",
 		"/S/e_12_darties_cgi3/application/config/config.php",
@@ -417,22 +505,18 @@
 		"/S/e_12_darties_cgi3/application/views/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/views/utilisateurs/change-password.php",
 		"/S/e_12_darties_cgi3/application/views/utilisateurs/forgotten.php",
-		"/S/e_12_darties_cgi3/application/models/utilisateur.php",
 		"/S/e_12_darties_cgi3/application/language/english/form_validation_lang.php",
 		"/S/e_12_darties_cgi3/application/views/emails/forgotten_password.php",
 		"/S/e_12_darties_cgi3/application/config/email.php",
 		"/S/e_12_darties_cgi3/assets/js/main.js",
 		"/S/e_12_darties_cgi3/system/database/DB_active_rec.php",
-		"/S/e_12_darties_cgi3/application/views/layouts/main-nav.php",
 		"/S/e_12_darties_cgi3/application/views/login.php",
 		"/S/e_12_darties_cgi3/application/models/profil.php",
-		"/S/e_12_darties_cgi3/application/views/utilisateurs/login.php",
 		"/S/e_12_darties_cgi3/application/models/utilisateur_m.php",
 		"/S/e_12_darties_cgi3/index.php",
 		"/S/e_12_darties_cgi3/application/config/datamapper.php",
 		"/H/Git/git-bash.bat",
 		"/F/Graphique/exemple pie.html",
-		"/S/e_12_darties_cgi3/application/helpers/darties_helper.php",
 		"/S/e_12_darties_cgi3/application/config/routes.php",
 		"/S/e_12_darties_cgi3/application/config/database.php",
 		"/S/e_12_darties_cgi3/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php",
@@ -440,11 +524,9 @@
 		"/S/e_12_darties_cgi3/system/database/drivers/pdo/pdo_result.php",
 		"/S/e_12_darties_cgi3/system/database/DB.php",
 		"/S/e_12_darties_cgi3/application/libraries/Gas_extension_jquery.php",
-		"/S/e_12_darties_cgi3/application/controllers/utilisateurs.php",
 		"/S/e_12_darties_cgi3/application/libraries/Gas.php",
 		"/S/e_12_darties_cgi3/application/config/gas.php",
 		"/S/e_12_darties_cgi3/application/controllers/ajax.php",
-		"/S/e_12_darties_cgi3/application/views/layouts/filters.php",
 		"/S/e_12_darties_cgi3/application/controllers/commercial/analyse.php",
 		"/S/e_12_darties_cgi3/application/index.html",
 		"/S/e_12_darties_cgi3/system/database/DB_driver.php",
@@ -455,10 +537,8 @@
 		"/S/e_12_darties_cgi3/application/controllers/commercial/aide.php",
 		"/S/e_12_darties_cgi3/application/core/MY_Controller.php",
 		"/S/e_12_darties_cgi3/application/views/home/index.php",
-		"/S/e_12_darties_cgi3/assets/compass/sass/style.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_tables.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_commercial.scss",
-		"/S/e_12_darties_cgi3/assets/compass/sass/_general.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_menus.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_header.scss",
 		"/S/e_12_darties_cgi3/assets/compass/sass/_ajax.scss",
@@ -543,9 +623,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -553,6 +634,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"IDFAMILLE_PRODUIT",
+			"dump",
 			"redirect",
 			"error",
 			");\n",
@@ -692,50 +775,49 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/utilisateurs.php",
+					"file": "application/models/site.php",
 					"settings":
 					{
-						"buffer_size": 3323,
+						"buffer_size": 986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1937,
-								1937
+								807,
+								807
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/views/utilisateurs/login.php",
+					"file": "application/views/layouts/filters.php",
 					"settings":
 					{
-						"buffer_size": 5417,
+						"buffer_size": 2780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4997,
-								4997
+								0,
+								0
 							]
 						],
 						"settings":
@@ -745,31 +827,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1620.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
-					"file": "application/models/utilisateur.php",
+					"file": "application/controllers/home.php",
 					"settings":
 					{
-						"buffer_size": 3391,
+						"buffer_size": 732,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								454,
-								454
+								325,
+								357
 							]
 						],
 						"settings":
@@ -778,7 +854,282 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/controllers/commercial/analyse.php",
+					"settings":
+					{
+						"buffer_size": 652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/controllers/commercial/palmares.php",
+					"settings":
+					{
+						"buffer_size": 680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								342,
+								342
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/commercial/palmares.php",
+					"settings":
+					{
+						"buffer_size": 1324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "application/models/utilisateur.php",
+					"settings":
+					{
+						"buffer_size": 3386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/core/Main_Controller.php",
+					"settings":
+					{
+						"buffer_size": 3270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2313,
+								2313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/views/default.php",
+					"settings":
+					{
+						"buffer_size": 9477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9206,
+								9051
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2590.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "application/views/home/index.php",
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/compass/sass/_tables.scss",
+					"settings":
+					{
+						"buffer_size": 1956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								689,
+								689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/js/main.js",
+					"settings":
+					{
+						"buffer_size": 666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/compass/sass/_commercial.scss",
+					"settings":
+					{
+						"buffer_size": 208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -819,7 +1170,7 @@
 		"rows":
 		[
 			0.0,
-			0.5,
+			0.113024757804,
 			1.0
 		]
 	},

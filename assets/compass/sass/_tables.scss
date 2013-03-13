@@ -30,9 +30,28 @@
 
 /* TABLE COMING FROM AJAX */
 #ajax-area table {
-	.negative { color: red !important; }
-	.positive { color: #4fb334 !important; }
-	.blue-bg td { @extend .table-th; }
+	.negative {
+		color: red;
+
+		.palmares & {
+			background: rgba(255,0,0,.2); font-weight: bold;
+		}
+	}
+
+	.positive {
+		color: #4fb334;
+
+		.palmares & {
+			background: rgba(79,179,52,.2); font-weight: bold;
+		}
+	}
+
+	.palmares & tbody tr:hover .positive, .palmares & tbody tr:hover .negative { background: rgba(197, 220, 236, .8); }
+
+	.blue-bg td {
+		@extend .table-th;
+	}
+
 	.blue-bg:hover th, .blue-bg:hover td { @extend .table-th; }
 
 	tr td {
