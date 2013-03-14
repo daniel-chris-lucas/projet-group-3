@@ -1,4 +1,0 @@
-Array ( [url] => url=http://saskatchewan.univ-ubs.fr:8080/SASStoredProcess/do?_username=DARTIES3-2012&_password=P@ssw0rd&_program=%2FUtilisateurs%2FDARTIES3-2012%2FMon+dossier%2Fanalyse_dc&annee=2012&ind=V&_action=execute [indicateur] => CA [date] => --- Date --- [devise] => --- Devise --- [enseigne] => --- Enseigne --- [region] => --- Région --- [cumul] => --- Cumul --- [produits] => --- Famille de Produits --- ) 
-
-
-Array ( [url] => http://saskatchewan.univ-ubs.fr:8080/SASStoredProcess/do?_username=DARTIES3-2012 [_password] => P@ssw0rd [_program] => /Utilisateurs/DARTIES3-2012/Mon dossier/analyse_dc [annee] => 2012 [ind] => V [_action] => execute ) 
