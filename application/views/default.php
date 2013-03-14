@@ -114,7 +114,7 @@
                     addCharts();
                     scrollingTables();
                     updateFiltersBar();
-                    createGauges();
+                    createGauges( "<?= $this->data['active'] ?>" );
                 }).fail( function( jqXHR, textStatus, errorThrown ) {
                     $( 'div#loading-bg' ).fadeOut( 'slow' );
                     $( '#ajax-area' ).empty().html(
@@ -337,33 +337,36 @@
 
 
             // create gauges for commercial home page
-            function createGauges() {
-                $( '.commercial.accueil #ajax-area' ).append( '<div id="FWWrapper" style="overflow: hidden"></div>' );
-                $( '#FWWrapper' ).append( '<div id="chartContainer1" class="FWContainer">Fusion Widgets will load here</div>' );
-                $( '#FWWrapper' ).append( '<div id="chartContainer2" class="FWContainer">Fusion Widgets will load here</div>' );
-                $( '#FWWrapper' ).append( '<div id="chartContainer3" class="FWContainer">Fusion Widgets will load here</div>' );
+            function createGauges( page ) {
+                if( page == 'accueil' )
+                {
+                    $( '.commercial.accueil #ajax-area' ).append( '<div style="float: left; position: relative; left: 50%;"><div id="FWWrapper" style="overflow: hidden"></div></div>' );
+                    $( '#FWWrapper' ).append( '<div id="chartContainer1" class="FWContainer">Fusion Widgets will load here</div>' );
+                    $( '#FWWrapper' ).append( '<div id="chartContainer2" class="FWContainer">Fusion Widgets will load here</div>' );
+                    $( '#FWWrapper' ).append( '<div id="chartContainer3" class="FWContainer">Fusion Widgets will load here</div>' );
 
-                $.each( 'pre', function( index, value ) {
-                    var myChart = new FusionCharts( "<?= base_url( 'assets/graphs/HLinearGauge.swf' ) ?>", "myChartID" + ( index + 1 ), "280", "100", "0", "1" );
-                    myChart.setXMLData('<chart lowerLimit="-100" upperLimit="100"  palette="1" numberSuffix="%" chartRightMargin="20" gaugeRoundRadius="10">\n\
-                    <colorRange>\n\
-                    <color minValue="-100" maxValue="10" code="FF654F" />\n\
-                    <color minValue="10" maxValue="30" code="F6BD0F" />\n\
-                    <color minValue="30" maxValue="100" code="8BBA00" />\n\
-                    </colorRange>\n\
-                    <pointers>\n\
-                    <pointer value="-50" />\n\
-                    </pointers>\n\
-                    <trendpoints>\n\
-                      <point startValue="15" displayValue="obj." color="black" thickness="0" alpha="100" showOnTop="0" useMarker="1" markerColor="F1f1f1" markerTooltext="objectif fixe par le directeur"/>\n\
-                    </trendpoints>\n\
-                    </chart>');
-                    myChart.render("chartContainer" + ( index + 1 ) );
-                });
+                    $.each( 'pre', function( index, value ) {
+                        var myChart = new FusionCharts( "<?= base_url( 'assets/graphs/HLinearGauge.swf' ) ?>", "myChartID" + ( index + 1 ), "280", "100", "0", "1" );
+                        myChart.setXMLData('<chart lowerLimit="-100" upperLimit="100"  palette="1" numberSuffix="%" chartRightMargin="20" gaugeRoundRadius="10">\n\
+                        <colorRange>\n\
+                        <color minValue="-100" maxValue="10" code="FF654F" />\n\
+                        <color minValue="10" maxValue="30" code="F6BD0F" />\n\
+                        <color minValue="30" maxValue="100" code="8BBA00" />\n\
+                        </colorRange>\n\
+                        <pointers>\n\
+                        <pointer value="-50" />\n\
+                        </pointers>\n\
+                        <trendpoints>\n\
+                          <point startValue="15" displayValue="obj." color="black" thickness="0" alpha="100" showOnTop="0" useMarker="1" markerColor="F1f1f1" markerTooltext="objectif fixe par le directeur"/>\n\
+                        </trendpoints>\n\
+                        </chart>');
+                        myChart.render("chartContainer" + ( index + 1 ) );
+                    });
 
-                $( '.FWContainer' ).each( function() {
-                    $( this ).prepend( '<div class="trialHider"></div>' );
-                });
+                    $( '.FWContainer' ).each( function() {
+                        $( this ).prepend( '<div class="trialHider"></div>' );
+                    });
+                }
             }
         })( jQuery );
     </script>

@@ -60,6 +60,12 @@ h4 {
 
 pre { display: none !important; }
 
+#FWWrapper {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
 .FWContainer {
     float: left;
     margin-right: 20px;

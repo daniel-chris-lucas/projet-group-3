@@ -45,7 +45,12 @@
                             <h4>Erreur</h4>
                             <?= $this->session->flashdata( 'flash_error' ) ?>
                         </div>
-                    <?php endif; ?>              
+                    <?php endif; ?>
+                    <?php if( $this->session->flashdata( 'flash_info' ) ) : ?>
+                        <div class="alert alert-info">
+                            <?= $this->session->flashdata( 'flash_info' ) ?>
+                        </div>
+                    <?php endif; ?>             
                     <div class="control-group <?= form_error( 'email' ) ? 'error' : '' ?>">
                         <label for="email" class="control-label">Adresse Email</label>
                         <div class="controls">

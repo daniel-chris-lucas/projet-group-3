@@ -11,7 +11,7 @@ class Home extends Main_Controller {
 		$default_filters['date'] = '26';
 
 		// Load the view
-		$this->template->load( 'default', 'home/index', array(
+		$this->template->load( 'default', 'home/' . $this->data['current_profile'], array(
 			'title' => 'Darties &#8226; Accueil',
 			'program' => '/Utilisateurs/DARTIES3-2012/Mon dossier/accueil_DC',
 			'active_filters' => $active_filters,
