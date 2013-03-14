@@ -1,4 +1,4 @@
-<h2>Historique - Directeur Commercial</h2>
+<h2>Bienvenue - Directeur Régional</h2>
 
 <p id="chosen-filters"></p>
 

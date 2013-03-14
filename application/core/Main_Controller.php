@@ -69,6 +69,8 @@ class Main_Controller extends MY_Controller
             $this->data['dates'] = $this->site->get_dates();
             $this->data['years'] = $this->site->get_years();
             $this->data['produits'] = $this->site->get_products();
+            $this->data['regions'] = $this->site->get_regions();
+            $this->data['enseignes'] = $this->site->get_enseignes();
         }
         else
         {

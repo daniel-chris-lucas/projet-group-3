@@ -39,4 +39,23 @@ class Site extends CI_Model
 		return $this->db->get( 'famille_produit' )->result();
 	}
 
+
+	function get_regions()
+	{
+		$corbeille = "'" . 'Y' . "'";
+		$this->db->select( 'idregion, libelle_region' );
+		$this->db->where( 'corbeille_region', $corbeille, FALSE );
+		return $this->db->get( 'region' )->result();
+	}
+
+
+	function get_enseignes()
+	{
+		$corbeille = "'" . 'Y' . "'";
+		$this->db->select( 'enseigne' );
+		$this->db->distinct();
+		$this->db->where( 'corbeille_mag', $corbeille, FALSE );
+		return $this->db->get( 'magasin' )->result();
+	}
+
 }

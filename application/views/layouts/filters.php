@@ -27,9 +27,19 @@
             </select>
             <select name="enseigne" id="enseigne" class="filter-dropkick" disabled>
                 <option value="null">--- Enseigne ---</option>
+                <?php foreach( $this->data['enseignes'] as $enseigne ) : ?>
+                    <option value="<?= $enseigne->ENSEIGNE ?>">
+                        <?= $enseigne->ENSEIGNE ?>
+                    </option>
+                <?php endforeach; ?>
             </select>
             <select name="region" id="region" class="filter-dropkick" disabled>
                 <option value="null">--- Région ---</option>
+                <?php foreach( $this->data['regions'] as $region ) : ?>
+                    <option value="<?= $region->IDREGION ?>" data-display="<?= str_replace( '_', ' ', $region->LIBELLE_REGION ) ?>">
+                        <?= str_replace( '_', ' ', $region->LIBELLE_REGION ) ?>
+                    </option>
+                <?php endforeach; ?>
             </select>
             <select name="cumul" id="cumul" class="filter-dropkick" disabled>
                 <option value="null">--- Cumul ---</option>
